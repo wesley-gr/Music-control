@@ -2,47 +2,13 @@
 
     Private Declare Sub keybd_event Lib "user32" (ByVal bVk As Byte, ByVal bScan As Byte, ByVal dwFlags As Long, ByVal dwExtraInfo As Long)
 
-    Dim Version = "V 1.0.5"
+    Dim Version = "V 2.0"
 
     Dim VLC_Running
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Me.Text = "Music Control " & Version
-
-        ' achtergrond transparant maken
-        If My.Settings.Frm_Control_Tranparent_Background Then
-            TransparencyKey = BackColor
-            btn_Play.FlatAppearance.BorderSize = 1
-            Btn_Mute.FlatAppearance.BorderSize = 1
-            Btn_Next.FlatAppearance.BorderSize = 1
-            Btn_Previous.FlatAppearance.BorderSize = 1
-            Btn_Volume_Higher.FlatAppearance.BorderSize = 1
-            Btn_Volume_Lower.FlatAppearance.BorderSize = 1
-        Else
-            Me.BackColor = My.Settings.Frm_All_Backcolor
-            btn_Play.FlatAppearance.BorderSize = 0
-            Btn_Mute.FlatAppearance.BorderSize = 0
-            Btn_Next.FlatAppearance.BorderSize = 0
-            Btn_Previous.FlatAppearance.BorderSize = 0
-            Btn_Volume_Higher.FlatAppearance.BorderSize = 0
-            Btn_Volume_Lower.FlatAppearance.BorderSize = 0
-
-            Dim tmp_color
-            tmp_color = Color_darker(Me.BackColor)
-            btn_Play.BackColor = tmp_color
-            Btn_Mute.BackColor = tmp_color
-            Btn_Next.BackColor = tmp_color
-            btn_Play.BackColor = tmp_color
-            Btn_Previous.BackColor = tmp_color
-            Btn_Volume_Higher.BackColor = tmp_color
-            Btn_Volume_Lower.BackColor = tmp_color
-
-            If My.Settings.Frm_Windows_As_Background Then
-                Me.BackColor = SystemColors.Window
-            End If
-
-        End If
 
         If My.Settings.Frm_Control_Btn_Frm_Size = 0 Then
             My.Settings.Frm_Control_Btn_Frm_Size = 40

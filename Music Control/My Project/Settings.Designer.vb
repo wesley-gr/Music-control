@@ -80,37 +80,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
-        Public Property app_Start_With_Windows() As Boolean
-            Get
-                Return CType(Me("app_Start_With_Windows"),Boolean)
-            End Get
-            Set
-                Me("app_Start_With_Windows") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
-        Public Property Frm_Control_Tranparent_Background() As Boolean
-            Get
-                Return CType(Me("Frm_Control_Tranparent_Background"),Boolean)
-            End Get
-            Set
-                Me("Frm_Control_Tranparent_Background") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("224, 224, 224")>  _
-        Public Property Frm_All_Backcolor() As Global.System.Drawing.Color
+        Public Property Frm_Backcolor() As Global.System.Drawing.Color
             Get
-                Return CType(Me("Frm_All_Backcolor"),Global.System.Drawing.Color)
+                Return CType(Me("Frm_Backcolor"),Global.System.Drawing.Color)
             End Get
             Set
-                Me("Frm_All_Backcolor") = value
+                Me("Frm_Backcolor") = value
             End Set
         End Property
         

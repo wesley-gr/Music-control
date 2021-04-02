@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Music Control.exe" size="473088">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Music Control.exe" size="463360">
       <assemblyIdentity name="Music Control" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>F+uC99CShBP4ms9GlNMujga4C8psqs6OMoLkgoi3cEY=</dsig:DigestValue>
+        <dsig:DigestValue>t0rcBHzz9yQKehdkOehTBHQ85YTRy4Zx+XHXQlrhJZc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>3/eRzsr7qULw6SgZL0FCjo7c3NsUy9jWSSi1FEoEMcs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Music Control.exe.config" size="2936">
+  <file name="Music Control.exe.config" size="2649">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>RutT1YgBqiulww+wEPIQGwbEhExTuwgfKuvnSVsn1aA=</dsig:DigestValue>
+      <dsig:DigestValue>kS+N5hyms1NsuvaQPjKM0SMGShhy3Z4aYoLzHJdfNnM=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -1,118 +1,60 @@
 ﻿Public Class Frm_Settings
 
     Private Sub Settings_Closing(sender As Object, e As EventArgs) Handles MyBase.FormClosing
+        'enable always on top'frm_control
         FRM_Control.Timer1.Enabled = True
+        'save settings
         My.Settings.Save()
     End Sub
 
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'enable always on top'frm_control
         FRM_Control.Timer1.Enabled = False
+
+        'set text for always on top setting
         Tbx_AlwaysOnTop.Text = My.Settings.Frm_Control_Time_AlwaysOnTop / 1000
+
+        'set text for size setting
         Tbx_Btn_Size.Text = My.Settings.Frm_Control_Btn_Frm_Size
-        Cbx_StartWithWindows.Checked = My.Settings.app_Start_With_Windows
-        Cbx_TransparentBackground.Checked = My.Settings.Frm_Control_Tranparent_Background
-        Me.BackColor = My.Settings.Frm_All_Backcolor
-        Btn_Ok.BackColor = My.Settings.Frm_All_Backcolor
-        Btn_Cancel.BackColor = My.Settings.Frm_All_Backcolor
-        Btn_BackgroundColor.BackColor = My.Settings.Frm_All_Backcolor
+
+        'set text for position setting
         CB_Position.Text = My.Settings.Frm_Control_Position
-        Cbx_BackgroundSameAsWindosColor.Checked = My.Settings.Frm_Windows_As_Background
 
-        Tbx_AlwaysOnTop.BackColor = Me.BackColor
-        Tbx_Btn_Size.BackColor = Me.BackColor
-        Cbx_StartWithWindows.BackColor = Me.BackColor
-        Cbx_TransparentBackground.BackColor = Me.BackColor
-        Cbx_BackgroundSameAsWindosColor.BackColor = Me.BackColor
-        CB_Position.BackColor = Me.BackColor
-
-        Btn_Ok.BackColor = Color_darker(Me.BackColor)
-        Btn_Cancel.BackColor = Color_darker(Me.BackColor)
+        'set color for brackground selection
+        Btn_BackgroundColor.BackColor = My.Settings.Frm_Backcolor
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Btn_Ok.Click
-        FRM_Control.Timer1.Enabled = True
+    Private Sub Button_ok_Click(sender As Object, e As EventArgs) Handles Btn_Ok.Click
+#Region "variables"
+        'declare variables
+        Dim tmp_string As String
+        Dim tmp_integer As Integer
+#End Region
 
-        My.Settings.Frm_All_Backcolor = Btn_BackgroundColor.BackColor
+#Region "settings"
+        'set backgroundcolor in settings
+        My.Settings.Frm_Backcolor = Btn_BackgroundColor.BackColor
 
-        Dim temp_string As String
-        Dim temp_integer As Integer
+#End Region
 
-        temp_string = Tbx_AlwaysOnTop.Text
-        temp_integer = CInt(Int(temp_string))
-
-        My.Settings.Frm_Control_Time_AlwaysOnTop = temp_integer * 1000
-
-        temp_string = Tbx_Btn_Size.Text
-        temp_integer = CInt(Int(temp_string))
-
-        My.Settings.Frm_Control_Btn_Frm_Size = temp_integer
-
-        Resize_form_buttons_Control()
-
+#Region "always on top"
+        'convert always on top to int
+        tmp_string = Tbx_AlwaysOnTop.Text
+        tmp_integer = CInt(Int(tmp_string))
+        My.Settings.Frm_Control_Time_AlwaysOnTop = tmp_integer * 1000
         FRM_Control.Timer1.Interval = My.Settings.Frm_Control_Time_AlwaysOnTop
+#End Region
 
-        If Cbx_BackgroundSameAsWindosColor.Checked Then
-            My.Settings.Frm_All_Backcolor = SystemColors.Window
-        End If
+#Region "button size"
+        tmp_string = Tbx_Btn_Size.Text
+        tmp_integer = CInt(Int(tmp_string))
+        My.Settings.Frm_Control_Btn_Frm_Size = tmp_integer
+        Resize_form_buttons_Control()
+#End Region
 
-        My.Settings.app_Start_With_Windows = Cbx_StartWithWindows.Checked
-        My.Settings.Frm_Control_Tranparent_Background = Cbx_TransparentBackground.Checked
-
-        ' The following code is a rendition of one provided by
-        ' Firestarter_75, so he gets the credit here:
-
-        Dim applicationName As String = Application.ProductName
-        Dim applicationPath As String = Application.ExecutablePath
-
-        If Cbx_StartWithWindows.Checked Then
-            Dim regKey As Microsoft.Win32.RegistryKey
-            regKey = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\Microsoft\Windows\CurrentVersion\Run", True)
-            regKey.SetValue(applicationName, """" & applicationPath & """")
-            regKey.Close()
-        Else
-            Dim regKey As Microsoft.Win32.RegistryKey
-            regKey = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\Microsoft\Windows\CurrentVersion\Run", True)
-            regKey.DeleteValue(applicationName, False)
-            regKey.Close()
-
-        End If
-
-
-
-        If Cbx_TransparentBackground.Checked Then
-            FRM_Control.TransparencyKey = BackColor
-            TransparencyKey = BackColor
-
-            FRM_Control.btn_Play.FlatAppearance.BorderSize = 1
-            FRM_Control.Btn_Mute.FlatAppearance.BorderSize = 1
-            FRM_Control.Btn_Next.FlatAppearance.BorderSize = 1
-            FRM_Control.Btn_Previous.FlatAppearance.BorderSize = 1
-            FRM_Control.Btn_Volume_Higher.FlatAppearance.BorderSize = 1
-            FRM_Control.Btn_Volume_Lower.FlatAppearance.BorderSize = 1
-        Else
-            FRM_Control.BackColor = My.Settings.Frm_All_Backcolor
-            FRM_Control.btn_Play.FlatAppearance.BorderSize = 0
-            FRM_Control.Btn_Mute.FlatAppearance.BorderSize = 0
-            FRM_Control.Btn_Next.FlatAppearance.BorderSize = 0
-            FRM_Control.Btn_Previous.FlatAppearance.BorderSize = 0
-            FRM_Control.Btn_Volume_Higher.FlatAppearance.BorderSize = 0
-            FRM_Control.Btn_Volume_Lower.FlatAppearance.BorderSize = 0
-
-            Dim tmp_color
-            tmp_color = Color_darker(My.Settings.Frm_All_Backcolor)
-            FRM_Control.btn_Play.BackColor = tmp_color
-            FRM_Control.Btn_Mute.BackColor = tmp_color
-            FRM_Control.Btn_Next.BackColor = tmp_color
-            FRM_Control.btn_Play.BackColor = tmp_color
-            FRM_Control.Btn_Previous.BackColor = tmp_color
-            FRM_Control.Btn_Volume_Higher.BackColor = tmp_color
-            FRM_Control.Btn_Volume_Lower.BackColor = tmp_color
-
-        End If
-
+#Region "form control position"
         My.Settings.Frm_Control_Position = CB_Position.Text
-
         Select Case My.Settings.Frm_Control_Position
             Case "TopLeft"
                 form_at_topleft(FRM_Control)
@@ -125,28 +67,56 @@
             Case "Center"
                 form_at_center(FRM_Control)
         End Select
+#End Region
 
-
-
-        My.Settings.Frm_Windows_As_Background = Cbx_BackgroundSameAsWindosColor.Checked
-
-        Btn_Ok.BackColor = Color_darker(Me.BackColor)
+#Region "form controlbackcolor"
+        FRM_Control.BackColor = My.Settings.Frm_Backcolor
+#End Region
 
         Me.Close()
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Btn_Cancel.Click
-        FRM_Control.Timer1.Enabled = True
+    Private Sub Btn_Cancel_Click(sender As Object, e As EventArgs) Handles Btn_Cancel.Click
         Me.Close()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Btn_BackgroundColor.Click
+    Private Sub Btn_BackgroundColor_Click(sender As Object, e As EventArgs) Handles Btn_BackgroundColor.Click
         Dim cDialog As New ColorDialog()
-        cDialog.Color = My.Settings.Frm_All_Backcolor
+        cDialog.Color = My.Settings.Frm_Backcolor
 
         If (cDialog.ShowDialog() = DialogResult.OK) Then
             Btn_BackgroundColor.BackColor = cDialog.Color ' update with user selected color.
         End If
     End Sub
+
+    Private Sub Btn_Close_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
+        'close form
+        Me.Close()
+    End Sub
+
+    Private Sub Tbx_Btn_Size_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Tbx_Btn_Size.KeyPress
+        '97 - 122 = Ascii codes for simple letters
+        '65 - 90  = Ascii codes for capital letters
+        '48 - 57  = Ascii codes for numbers
+
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub Tbx_AlwaysOnTop_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Tbx_AlwaysOnTop.KeyPress
+        '97 - 122 = Ascii codes for simple letters
+        '65 - 90  = Ascii codes for capital letters
+        '48 - 57  = Ascii codes for numbers
+
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
 End Class

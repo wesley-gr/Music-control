@@ -8,13 +8,7 @@
     <Setting Name="Frm_Control_Btn_Frm_Size" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="app_Start_With_Windows" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="Frm_Control_Tranparent_Background" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="Frm_All_Backcolor" Type="System.Drawing.Color" Scope="User">
+    <Setting Name="Frm_Backcolor" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">224, 224, 224</Value>
     </Setting>
     <Setting Name="Frm_Control_Position" Type="System.String" Scope="User">
