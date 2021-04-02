@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Music Control.exe" size="475136">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Music Control.exe" size="473088">
       <assemblyIdentity name="Music Control" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>p9Vfu5gsauY7/YUvoCaS0WDW4H74fUMexCAiqTk5qpQ=</dsig:DigestValue>
+        <dsig:DigestValue>F+uC99CShBP4ms9GlNMujga4C8psqs6OMoLkgoi3cEY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

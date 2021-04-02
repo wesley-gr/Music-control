@@ -137,7 +137,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="code\Settings1.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="form\Frm_Control.resx">
@@ -184,12 +183,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\media_volume_3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\calculation.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\spotify1.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
