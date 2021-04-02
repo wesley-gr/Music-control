@@ -1,0 +1,50 @@
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.Resources.resources
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.vbproj.GenerateResource.Cache
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.exe.config
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.exe
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.pdb
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.xml
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.exe
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.xml
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.pdb
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.exe.manifest
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.application
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.exe.manifest
+c:\users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.application
+C:\Users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.Settings.resources
+C:\Users\wes\documents\visual studio 2013\Projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.FRM_Control.resources
+C:\Users\sqc\Documents\Visual Studio 2013\Projects\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.exe.config
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.exe.config
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.FRM_Control.resources
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.Frm_Settings.resources
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.Resources.resources
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.vbproj.GenerateResource.Cache
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.exe.manifest
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.application
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.exe
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.pdb
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.xml
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.exe.manifest
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.application
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.exe
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.xml
+Y:\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.pdb
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.exe.config
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.exe
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.xml
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.pdb
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.exe.manifest
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.application
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.exe
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.pdb
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.xml
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.FRM_Control.resources
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.Frm_Settings.resources
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.Resources.resources
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\musiccontrol2.vbproj.GenerateResource.Cache
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.exe.manifest
+C:\Users\sqc\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.application
+C:\Users\qca\CloudStation\visual projects\musiccontrol2\musiccontrol2\bin\Debug\Music Control.exe.config
+C:\Users\qca\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.exe
+C:\Users\qca\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.xml
+C:\Users\qca\CloudStation\visual projects\musiccontrol2\musiccontrol2\obj\Debug\Music Control.pdb
