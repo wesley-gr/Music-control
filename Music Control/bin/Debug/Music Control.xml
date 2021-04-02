@@ -22,32 +22,7 @@ Music Control
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:MusicControl.My.Resources.Resources.media_next">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:MusicControl.My.Resources.Resources.media_play_pause_resume">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:MusicControl.My.Resources.Resources.media_previous">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:MusicControl.My.Resources.Resources.media_volume_0">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:MusicControl.My.Resources.Resources.media_volume_1">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:MusicControl.My.Resources.Resources.media_volume_3">
+<member name="P:MusicControl.My.Resources.Resources.play">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

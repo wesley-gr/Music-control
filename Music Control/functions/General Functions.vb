@@ -139,4 +139,43 @@
 
     End Function
 
+    Public Sub Resize_form_buttons_Control()
+        Dim space = 5
+        Dim button_small = 25
+
+        FRM_Control.Height = My.Settings.Frm_Control_Btn_Frm_Size + button_small + (3 * space)
+        FRM_Control.Width = (My.Settings.Frm_Control_Btn_Frm_Size * 6) + space + (6 * space)
+
+        FRM_Control.btn_Play.Height = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.btn_Play.Width = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.btn_Play.Location = New Point(space, 35)
+
+        FRM_Control.Btn_Previous.Height = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.Btn_Previous.Width = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.Btn_Previous.Location = New Point((My.Settings.Frm_Control_Btn_Frm_Size + (2 * space)), 35)
+
+        FRM_Control.Btn_Next.Height = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.Btn_Next.Width = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.Btn_Next.Location = New Point(((2 * My.Settings.Frm_Control_Btn_Frm_Size) + (3 * space)), 35)
+
+        FRM_Control.Btn_Mute.Height = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.Btn_Mute.Width = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.Btn_Mute.Location = New Point(((3 * My.Settings.Frm_Control_Btn_Frm_Size) + (4 * space)), 35)
+
+        FRM_Control.Btn_Volume_Lower.Height = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.Btn_Volume_Lower.Width = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.Btn_Volume_Lower.Location = New Point(((4 * My.Settings.Frm_Control_Btn_Frm_Size) + (5 * space)), 35)
+
+        FRM_Control.Btn_Volume_Higher.Height = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.Btn_Volume_Higher.Width = My.Settings.Frm_Control_Btn_Frm_Size
+        FRM_Control.Btn_Volume_Higher.Location = New Point(((5 * My.Settings.Frm_Control_Btn_Frm_Size) + (6 * space)), 35)
+
+        FRM_Control.Btn_Close.Location = New Point((FRM_Control.Width - 30), 5)
+
+        FRM_Control.Btn_minimize.Location = New Point((FRM_Control.Width - 30 - 30), 5)
+        FRM_Control.lbl_Header.Location = New Point(5, 10)
+
+        FRM_Control.Btn_settings.Location = New Point((FRM_Control.Width - 30 - 30 - 30 + 5), 10)
+
+    End Sub
 End Module

@@ -8,9 +8,6 @@
     <Setting Name="Frm_Control_Btn_Frm_Size" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Frm_Backcolor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">224, 224, 224</Value>
-    </Setting>
     <Setting Name="Frm_Control_Position" Type="System.String" Scope="User">
       <Value Profile="(Default)">TopLeft</Value>
     </Setting>

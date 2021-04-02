@@ -24,50 +24,68 @@ Partial Class FRM_Control
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_Control))
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.MinimizeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Tmr_on_Top = New System.Windows.Forms.Timer(Me.components)
+        Me.Btn_Close = New System.Windows.Forms.Button()
+        Me.Btn_minimize = New System.Windows.Forms.Button()
+        Me.lbl_Header = New System.Windows.Forms.Label()
         Me.Btn_Volume_Higher = New System.Windows.Forms.Button()
         Me.Btn_Volume_Lower = New System.Windows.Forms.Button()
         Me.Btn_Mute = New System.Windows.Forms.Button()
         Me.Btn_Next = New System.Windows.Forms.Button()
         Me.Btn_Previous = New System.Windows.Forms.Button()
         Me.btn_Play = New System.Windows.Forms.Button()
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.ContextMenuStrip1.SuspendLayout()
+        Me.Btn_settings = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Timer1
+        'Tmr_on_Top
         '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 5000
+        Me.Tmr_on_Top.Enabled = True
+        Me.Tmr_on_Top.Interval = 5000
         '
-        'ContextMenuStrip1
+        'Btn_Close
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MinimizeToolStripMenuItem, Me.SettingsToolStripMenuItem})
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.ShowImageMargin = False
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(128, 70)
+        Me.Btn_Close.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.Btn_Close.FlatAppearance.BorderSize = 0
+        Me.Btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Close.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
+        Me.Btn_Close.ForeColor = System.Drawing.Color.White
+        Me.Btn_Close.Location = New System.Drawing.Point(307, 5)
+        Me.Btn_Close.Name = "Btn_Close"
+        Me.Btn_Close.Size = New System.Drawing.Size(25, 25)
+        Me.Btn_Close.TabIndex = 29
+        Me.Btn_Close.Text = "X"
+        Me.Btn_Close.UseVisualStyleBackColor = False
         '
-        'MinimizeToolStripMenuItem
+        'Btn_minimize
         '
-        Me.MinimizeToolStripMenuItem.Name = "MinimizeToolStripMenuItem"
-        Me.MinimizeToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.MinimizeToolStripMenuItem.Text = "minimize"
+        Me.Btn_minimize.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.Btn_minimize.FlatAppearance.BorderSize = 0
+        Me.Btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_minimize.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
+        Me.Btn_minimize.ForeColor = System.Drawing.Color.White
+        Me.Btn_minimize.Location = New System.Drawing.Point(276, 5)
+        Me.Btn_minimize.Name = "Btn_minimize"
+        Me.Btn_minimize.Size = New System.Drawing.Size(25, 25)
+        Me.Btn_minimize.TabIndex = 30
+        Me.Btn_minimize.Text = "-"
+        Me.Btn_minimize.UseVisualStyleBackColor = False
         '
-        'SettingsToolStripMenuItem
+        'lbl_Header
         '
-        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.SettingsToolStripMenuItem.Text = "settings"
+        Me.lbl_Header.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
+        Me.lbl_Header.ForeColor = System.Drawing.Color.White
+        Me.lbl_Header.Location = New System.Drawing.Point(115, 97)
+        Me.lbl_Header.Name = "lbl_Header"
+        Me.lbl_Header.Size = New System.Drawing.Size(95, 25)
+        Me.lbl_Header.TabIndex = 31
+        Me.lbl_Header.Text = "Settings"
         '
         'Btn_Volume_Higher
         '
         Me.Btn_Volume_Higher.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_Volume_Higher.BackgroundImage = Global.MusicControl.My.Resources.Resources.media_volume_3
+        Me.Btn_Volume_Higher.BackgroundImage = CType(resources.GetObject("Btn_Volume_Higher.BackgroundImage"), System.Drawing.Image)
         Me.Btn_Volume_Higher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btn_Volume_Higher.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.Btn_Volume_Higher.FlatAppearance.BorderSize = 0
         Me.Btn_Volume_Higher.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Volume_Higher.Location = New System.Drawing.Point(230, 5)
         Me.Btn_Volume_Higher.Name = "Btn_Volume_Higher"
@@ -78,9 +96,9 @@ Partial Class FRM_Control
         'Btn_Volume_Lower
         '
         Me.Btn_Volume_Lower.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_Volume_Lower.BackgroundImage = Global.MusicControl.My.Resources.Resources.media_volume_1
+        Me.Btn_Volume_Lower.BackgroundImage = CType(resources.GetObject("Btn_Volume_Lower.BackgroundImage"), System.Drawing.Image)
         Me.Btn_Volume_Lower.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btn_Volume_Lower.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.Btn_Volume_Lower.FlatAppearance.BorderSize = 0
         Me.Btn_Volume_Lower.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Volume_Lower.Location = New System.Drawing.Point(185, 5)
         Me.Btn_Volume_Lower.Name = "Btn_Volume_Lower"
@@ -91,9 +109,9 @@ Partial Class FRM_Control
         'Btn_Mute
         '
         Me.Btn_Mute.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_Mute.BackgroundImage = Global.MusicControl.My.Resources.Resources.media_volume_0
+        Me.Btn_Mute.BackgroundImage = CType(resources.GetObject("Btn_Mute.BackgroundImage"), System.Drawing.Image)
         Me.Btn_Mute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btn_Mute.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.Btn_Mute.FlatAppearance.BorderSize = 0
         Me.Btn_Mute.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Mute.Location = New System.Drawing.Point(140, 5)
         Me.Btn_Mute.Name = "Btn_Mute"
@@ -104,9 +122,9 @@ Partial Class FRM_Control
         'Btn_Next
         '
         Me.Btn_Next.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_Next.BackgroundImage = Global.MusicControl.My.Resources.Resources.media_next
+        Me.Btn_Next.BackgroundImage = CType(resources.GetObject("Btn_Next.BackgroundImage"), System.Drawing.Image)
         Me.Btn_Next.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btn_Next.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.Btn_Next.FlatAppearance.BorderSize = 0
         Me.Btn_Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Next.Location = New System.Drawing.Point(95, 5)
         Me.Btn_Next.Name = "Btn_Next"
@@ -117,9 +135,9 @@ Partial Class FRM_Control
         'Btn_Previous
         '
         Me.Btn_Previous.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_Previous.BackgroundImage = Global.MusicControl.My.Resources.Resources.media_previous
+        Me.Btn_Previous.BackgroundImage = CType(resources.GetObject("Btn_Previous.BackgroundImage"), System.Drawing.Image)
         Me.Btn_Previous.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btn_Previous.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.Btn_Previous.FlatAppearance.BorderSize = 0
         Me.Btn_Previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Previous.Location = New System.Drawing.Point(50, 5)
         Me.Btn_Previous.Name = "Btn_Previous"
@@ -130,9 +148,9 @@ Partial Class FRM_Control
         'btn_Play
         '
         Me.btn_Play.BackColor = System.Drawing.Color.Transparent
-        Me.btn_Play.BackgroundImage = Global.MusicControl.My.Resources.Resources.media_play_pause_resume
+        Me.btn_Play.BackgroundImage = CType(resources.GetObject("btn_Play.BackgroundImage"), System.Drawing.Image)
         Me.btn_Play.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_Play.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.btn_Play.FlatAppearance.BorderSize = 0
         Me.btn_Play.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_Play.Location = New System.Drawing.Point(5, 5)
         Me.btn_Play.Name = "btn_Play"
@@ -140,27 +158,40 @@ Partial Class FRM_Control
         Me.btn_Play.TabIndex = 0
         Me.btn_Play.UseVisualStyleBackColor = False
         '
-        'Timer2
+        'Btn_settings
         '
-        Me.Timer2.Enabled = True
+        Me.Btn_settings.BackColor = System.Drawing.Color.Transparent
+        Me.Btn_settings.BackgroundImage = CType(resources.GetObject("Btn_settings.BackgroundImage"), System.Drawing.Image)
+        Me.Btn_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Btn_settings.FlatAppearance.BorderSize = 0
+        Me.Btn_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_settings.Location = New System.Drawing.Point(296, 144)
+        Me.Btn_settings.Name = "Btn_settings"
+        Me.Btn_settings.Size = New System.Drawing.Size(20, 20)
+        Me.Btn_settings.TabIndex = 32
+        Me.Btn_settings.UseVisualStyleBackColor = False
         '
         'FRM_Control
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(279, 53)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(633, 329)
+        Me.Controls.Add(Me.Btn_settings)
+        Me.Controls.Add(Me.lbl_Header)
+        Me.Controls.Add(Me.Btn_minimize)
+        Me.Controls.Add(Me.Btn_Close)
         Me.Controls.Add(Me.Btn_Volume_Higher)
         Me.Controls.Add(Me.Btn_Volume_Lower)
         Me.Controls.Add(Me.Btn_Mute)
         Me.Controls.Add(Me.Btn_Next)
         Me.Controls.Add(Me.Btn_Previous)
         Me.Controls.Add(Me.btn_Play)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FRM_Control"
         Me.Text = "Music Control"
-        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -170,10 +201,9 @@ Partial Class FRM_Control
     Friend WithEvents Btn_Mute As System.Windows.Forms.Button
     Friend WithEvents Btn_Volume_Lower As System.Windows.Forms.Button
     Friend WithEvents Btn_Volume_Higher As System.Windows.Forms.Button
-    Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
-    Friend WithEvents SettingsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents MinimizeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Timer2 As System.Windows.Forms.Timer
-
+    Friend WithEvents Tmr_on_Top As System.Windows.Forms.Timer
+    Friend WithEvents Btn_Close As Button
+    Friend WithEvents Btn_minimize As Button
+    Friend WithEvents lbl_Header As Label
+    Friend WithEvents Btn_settings As Button
 End Class

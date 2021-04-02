@@ -1,33 +1,31 @@
 ﻿Public Class FRM_Control
 
+    ' declare varieble for keyboard media keys
     Private Declare Sub keybd_event Lib "user32" (ByVal bVk As Byte, ByVal bScan As Byte, ByVal dwFlags As Long, ByVal dwExtraInfo As Long)
 
-    Dim Version = "V 2.0"
+    'declare version
+    Dim Version = "V2.0"
 
-    Dim VLC_Running
+    Private Sub frm_control_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        Me.Text = "Music Control " & Version
-
+#Region "default settings"
+        'default settings volume
         If My.Settings.Frm_Control_Btn_Frm_Size = 0 Then
             My.Settings.Frm_Control_Btn_Frm_Size = 40
         End If
-
-        Resize_form_buttons_Control()
-
+        'default settings always on top time
         If My.Settings.Frm_Control_Time_AlwaysOnTop = 0 Then
             My.Settings.Frm_Control_Time_AlwaysOnTop = 5000
         End If
+#End Region
 
-        Timer1.Interval = My.Settings.Frm_Control_Time_AlwaysOnTop
+#Region "timer value set"
+        Tmr_on_Top.Interval = My.Settings.Frm_Control_Time_AlwaysOnTop
+#End Region
 
-        'get username
-        Dim user As String
-        user = Get_UserName()
+        Resize_form_buttons_Control()
 
-        'controleer of spotify geinstaleerd is.
-
+#Region "form position"
         Select Case My.Settings.Frm_Control_Position
             Case "TopLeft"
                 form_at_topleft(Me)
@@ -40,86 +38,76 @@
             Case "Center"
                 form_at_center(Me)
         End Select
+#End Region
+
+        lbl_Header.Text = "Music control "
 
     End Sub
 
-    Private Sub Form1_close(sender As Object, e As EventArgs) Handles MyBase.FormClosing
+    Private Sub Frm_control_close(sender As Object, e As EventArgs) Handles MyBase.FormClosing
         My.Settings.Save()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_Play.Click
-
-        VLC_Running = Check_If_Running("vlc")
-
-        If VLC_Running Then
-            activate_Program("vlc", "{BACKSPACE}")
-        End If
-
-        keybd_event(System.Windows.Forms.Keys.MediaPlayPause, 0, 1, 0)
+    Private Sub btn_Play_Click(sender As Object, e As EventArgs) Handles btn_Play.Click
+        keybd_event(Keys.MediaPlayPause, 0, 1, 0)
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Btn_Previous.Click
-
-        VLC_Running = Check_If_Running("vlc")
-
-        If VLC_Running Then
-            activate_Program("vlc", "P")
-        End If
-
-        keybd_event(System.Windows.Forms.Keys.MediaPreviousTrack, 0, 1, 0)
+    Private Sub Btn_Previous_Click(sender As Object, e As EventArgs) Handles Btn_Previous.Click
+        keybd_event(Keys.MediaPreviousTrack, 0, 1, 0)
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Btn_Next.Click
-
-        VLC_Running = Check_If_Running("vlc")
-
-        If VLC_Running Then
-            activate_Program("vlc", "n")
-        End If
-
-        keybd_event(System.Windows.Forms.Keys.MediaNextTrack, 0, 1, 0)
+    Private Sub Btn_Next_Click(sender As Object, e As EventArgs) Handles Btn_Next.Click
+        keybd_event(Keys.MediaNextTrack, 0, 1, 0)
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Btn_Mute.Click
-        keybd_event(System.Windows.Forms.Keys.VolumeMute, 0, 1, 0)
+    Private Sub Btn_Mute_Click(sender As Object, e As EventArgs) Handles Btn_Mute.Click
+        keybd_event(Keys.VolumeMute, 0, 1, 0)
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Btn_Volume_Lower.Click
-        keybd_event(System.Windows.Forms.Keys.VolumeDown, 0, 1, 0)
+    Private Sub Btn_Volume_Lower_Click(sender As Object, e As EventArgs) Handles Btn_Volume_Lower.Click
+        keybd_event(Keys.VolumeDown, 0, 1, 0)
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Btn_Volume_Higher.Click
-        keybd_event(System.Windows.Forms.Keys.VolumeUp, 0, 1, 0)
+    Private Sub Btn_Volume_Higher_Click(sender As Object, e As EventArgs) Handles Btn_Volume_Higher.Click
+        keybd_event(Keys.VolumeUp, 0, 1, 0)
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+    Private Sub Tmr_on_Top_Tick(sender As Object, e As EventArgs) Handles Tmr_on_Top.Tick
         Me.TopMost = True
     End Sub
 
-    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
+    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Frm_Settings.Show()
     End Sub
 
-    Private Sub MinimizeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MinimizeToolStripMenuItem.Click
+    Private Sub Btn_Close_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Btn_minimize_Click(sender As Object, e As EventArgs) Handles Btn_minimize.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        Dim MyProcess() As Process = System.Diagnostics.Process.GetProcessesByName("spotify")
+    Private Sub Btn_settings_Click(sender As Object, e As EventArgs) Handles Btn_settings.Click
+        Frm_Settings.Show()
+    End Sub
 
-        For Each mykill As Process In MyProcess
-            mykill.Kill()
-        Next
+#Region "move form"
+    Const WM_NCHITTEST As Integer = &H84
+    Const HTCLIENT As Integer = &H1
+    Const HTCAPTION As Integer = &H2
+
+    Protected Overrides Sub WndProc(ByRef m As System.Windows.Forms.Message)
+        Select Case m.Msg
+            Case WM_NCHITTEST
+                MyBase.WndProc(m)
+                If m.Result = IntPtr.op_Explicit(HTCLIENT) Then m.Result = IntPtr.op_Explicit(HTCAPTION)
+            Case Else
+                MyBase.WndProc(m)
+        End Select
     End Sub
 
 
 
-    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        'get username
-        Dim user As String
-        user = Get_UserName()
-
-        'start program
-        Call Shell("C:\Users\" & user & "\AppData\Roaming\Spotify\spotify.exe", vbNormalFocus)
-    End Sub
+#End Region
 End Class

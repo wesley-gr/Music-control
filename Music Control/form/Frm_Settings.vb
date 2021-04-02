@@ -2,14 +2,14 @@
 
     Private Sub Settings_Closing(sender As Object, e As EventArgs) Handles MyBase.FormClosing
         'enable always on top'frm_control
-        FRM_Control.Timer1.Enabled = True
+        FRM_Control.Tmr_on_Top.Enabled = True
         'save settings
         My.Settings.Save()
     End Sub
 
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'enable always on top'frm_control
-        FRM_Control.Timer1.Enabled = False
+        FRM_Control.Tmr_on_Top.Enabled = False
 
         'set text for always on top setting
         Tbx_AlwaysOnTop.Text = My.Settings.Frm_Control_Time_AlwaysOnTop / 1000
@@ -20,8 +20,6 @@
         'set text for position setting
         CB_Position.Text = My.Settings.Frm_Control_Position
 
-        'set color for brackground selection
-        Btn_BackgroundColor.BackColor = My.Settings.Frm_Backcolor
 
     End Sub
 
@@ -32,18 +30,12 @@
         Dim tmp_integer As Integer
 #End Region
 
-#Region "settings"
-        'set backgroundcolor in settings
-        My.Settings.Frm_Backcolor = Btn_BackgroundColor.BackColor
-
-#End Region
-
 #Region "always on top"
         'convert always on top to int
         tmp_string = Tbx_AlwaysOnTop.Text
         tmp_integer = CInt(Int(tmp_string))
         My.Settings.Frm_Control_Time_AlwaysOnTop = tmp_integer * 1000
-        FRM_Control.Timer1.Interval = My.Settings.Frm_Control_Time_AlwaysOnTop
+        FRM_Control.Tmr_on_Top.Interval = My.Settings.Frm_Control_Time_AlwaysOnTop
 #End Region
 
 #Region "button size"
@@ -69,25 +61,13 @@
         End Select
 #End Region
 
-#Region "form controlbackcolor"
-        FRM_Control.BackColor = My.Settings.Frm_Backcolor
-#End Region
-
         Me.Close()
+
 
     End Sub
 
     Private Sub Btn_Cancel_Click(sender As Object, e As EventArgs) Handles Btn_Cancel.Click
         Me.Close()
-    End Sub
-
-    Private Sub Btn_BackgroundColor_Click(sender As Object, e As EventArgs) Handles Btn_BackgroundColor.Click
-        Dim cDialog As New ColorDialog()
-        cDialog.Color = My.Settings.Frm_Backcolor
-
-        If (cDialog.ShowDialog() = DialogResult.OK) Then
-            Btn_BackgroundColor.BackColor = cDialog.Color ' update with user selected color.
-        End If
     End Sub
 
     Private Sub Btn_Close_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
@@ -118,5 +98,22 @@
             End If
         End If
     End Sub
+
+#Region "move form"
+    Const WM_NCHITTEST As Integer = &H84
+    Const HTCLIENT As Integer = &H1
+    Const HTCAPTION As Integer = &H2
+
+    Protected Overrides Sub WndProc(ByRef m As System.Windows.Forms.Message)
+        Select Case m.Msg
+            Case WM_NCHITTEST
+                MyBase.WndProc(m)
+                If m.Result = IntPtr.op_Explicit(HTCLIENT) Then m.Result = IntPtr.op_Explicit(HTCAPTION)
+            Case Else
+                MyBase.WndProc(m)
+        End Select
+    End Sub
+
+#End Region
 
 End Class

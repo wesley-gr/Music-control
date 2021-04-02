@@ -80,18 +80,6 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("224, 224, 224")>  _
-        Public Property Frm_Backcolor() As Global.System.Drawing.Color
-            Get
-                Return CType(Me("Frm_Backcolor"),Global.System.Drawing.Color)
-            End Get
-            Set
-                Me("Frm_Backcolor") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("TopLeft")>  _
         Public Property Frm_Control_Position() As String
             Get

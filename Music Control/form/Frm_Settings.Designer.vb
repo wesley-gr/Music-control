@@ -26,10 +26,8 @@ Partial Class Frm_Settings
         Me.Btn_Ok = New System.Windows.Forms.Button()
         Me.Btn_Cancel = New System.Windows.Forms.Button()
         Me.Tbx_Btn_Size = New System.Windows.Forms.TextBox()
-        Me.Btn_BackgroundColor = New System.Windows.Forms.Button()
         Me.CB_Position = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Btn_Close = New System.Windows.Forms.Button()
         Me.Tbx_AlwaysOnTop = New System.Windows.Forms.TextBox()
@@ -55,7 +53,7 @@ Partial Class Frm_Settings
         Me.Btn_Ok.ForeColor = System.Drawing.Color.White
         Me.Btn_Ok.Location = New System.Drawing.Point(15, 190)
         Me.Btn_Ok.Name = "Btn_Ok"
-        Me.Btn_Ok.Size = New System.Drawing.Size(323, 25)
+        Me.Btn_Ok.Size = New System.Drawing.Size(265, 25)
         Me.Btn_Ok.TabIndex = 2
         Me.Btn_Ok.Text = "OK"
         Me.Btn_Ok.UseVisualStyleBackColor = False
@@ -69,7 +67,7 @@ Partial Class Frm_Settings
         Me.Btn_Cancel.ForeColor = System.Drawing.Color.White
         Me.Btn_Cancel.Location = New System.Drawing.Point(15, 225)
         Me.Btn_Cancel.Name = "Btn_Cancel"
-        Me.Btn_Cancel.Size = New System.Drawing.Size(323, 25)
+        Me.Btn_Cancel.Size = New System.Drawing.Size(265, 25)
         Me.Btn_Cancel.TabIndex = 3
         Me.Btn_Cancel.Text = "Cancel"
         Me.Btn_Cancel.UseVisualStyleBackColor = False
@@ -87,19 +85,6 @@ Partial Class Frm_Settings
         Me.Tbx_Btn_Size.Text = "0"
         Me.Tbx_Btn_Size.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Btn_BackgroundColor
-        '
-        Me.Btn_BackgroundColor.BackColor = System.Drawing.Color.White
-        Me.Btn_BackgroundColor.FlatAppearance.BorderSize = 0
-        Me.Btn_BackgroundColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_BackgroundColor.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
-        Me.Btn_BackgroundColor.ForeColor = System.Drawing.Color.White
-        Me.Btn_BackgroundColor.Location = New System.Drawing.Point(15, 145)
-        Me.Btn_BackgroundColor.Name = "Btn_BackgroundColor"
-        Me.Btn_BackgroundColor.Size = New System.Drawing.Size(100, 25)
-        Me.Btn_BackgroundColor.TabIndex = 11
-        Me.Btn_BackgroundColor.UseVisualStyleBackColor = False
-        '
         'CB_Position
         '
         Me.CB_Position.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
@@ -108,7 +93,7 @@ Partial Class Frm_Settings
         Me.CB_Position.ForeColor = System.Drawing.Color.White
         Me.CB_Position.FormattingEnabled = True
         Me.CB_Position.Items.AddRange(New Object() {"TopLeft", "TopRight", "BottomLeft", "BottomRight", "Center"})
-        Me.CB_Position.Location = New System.Drawing.Point(180, 145)
+        Me.CB_Position.Location = New System.Drawing.Point(15, 145)
         Me.CB_Position.Name = "CB_Position"
         Me.CB_Position.Size = New System.Drawing.Size(100, 26)
         Me.CB_Position.TabIndex = 14
@@ -124,21 +109,11 @@ Partial Class Frm_Settings
         Me.Label8.TabIndex = 17
         Me.Label8.Text = "Button Size"
         '
-        'Label7
-        '
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(15, 125)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(101, 18)
-        Me.Label7.TabIndex = 24
-        Me.Label7.Text = "Background color"
-        '
         'Label14
         '
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(180, 125)
+        Me.Label14.Location = New System.Drawing.Point(15, 125)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(102, 18)
         Me.Label14.TabIndex = 27
@@ -151,7 +126,7 @@ Partial Class Frm_Settings
         Me.Btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Close.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
         Me.Btn_Close.ForeColor = System.Drawing.Color.White
-        Me.Btn_Close.Location = New System.Drawing.Point(310, 15)
+        Me.Btn_Close.Location = New System.Drawing.Point(255, 15)
         Me.Btn_Close.Name = "Btn_Close"
         Me.Btn_Close.Size = New System.Drawing.Size(25, 25)
         Me.Btn_Close.TabIndex = 28
@@ -186,13 +161,11 @@ Partial Class Frm_Settings
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(350, 265)
+        Me.ClientSize = New System.Drawing.Size(295, 265)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Tbx_AlwaysOnTop)
         Me.Controls.Add(Me.Btn_Close)
-        Me.Controls.Add(Me.Btn_BackgroundColor)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.CB_Position)
         Me.Controls.Add(Me.Tbx_Btn_Size)
@@ -210,10 +183,8 @@ Partial Class Frm_Settings
     Friend WithEvents Btn_Ok As System.Windows.Forms.Button
     Friend WithEvents Btn_Cancel As System.Windows.Forms.Button
     Friend WithEvents Tbx_Btn_Size As System.Windows.Forms.TextBox
-    Friend WithEvents Btn_BackgroundColor As System.Windows.Forms.Button
     Friend WithEvents CB_Position As System.Windows.Forms.ComboBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Btn_Close As Button
     Friend WithEvents Tbx_AlwaysOnTop As TextBox
