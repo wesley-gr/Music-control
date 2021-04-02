@@ -16,14 +16,14 @@
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
           UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the 
+          If you want to change the Windows User Account Control level replace the
           requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward 
+         If you want to utilize File and Registry Virtualization for backward
          compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Music Control.exe" size="483840">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Music Control.exe" size="475136">
       <assemblyIdentity name="Music Control" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mEJ1RK/EQYc3AjTKzxzAZYbdyGUlRm09ARCSn7hxRwY=</dsig:DigestValue>
+        <dsig:DigestValue>p9Vfu5gsauY7/YUvoCaS0WDW4H74fUMexCAiqTk5qpQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>3/eRzsr7qULw6SgZL0FCjo7c3NsUy9jWSSi1FEoEMcs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Music Control.exe.config" size="2891">
+  <file name="Music Control.exe.config" size="2936">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>g0XeXIz258oK0AARGsJsRgfm0E7N720TSFJPiZWu8lc=</dsig:DigestValue>
+      <dsig:DigestValue>RutT1YgBqiulww+wEPIQGwbEhExTuwgfKuvnSVsn1aA=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

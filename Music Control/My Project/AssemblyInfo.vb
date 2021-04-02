@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("musiccontrol2")> 
+<Assembly: AssemblyTitle("music control")>
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("musiccontrol2")> 
-<Assembly: AssemblyCopyright("Copyright ©  2014")> 
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("music control")>
+<Assembly: AssemblyCopyright("Copyright ©  2021")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>

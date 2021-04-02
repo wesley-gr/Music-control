@@ -29,3 +29,20 @@ F:\cloud\visual projects\Music Control\Music Control\obj\Debug\MusicControl.Reso
 F:\cloud\visual projects\Music Control\Music Control\obj\Debug\Music Control.vbproj.GenerateResource.Cache
 F:\cloud\visual projects\Music Control\Music Control\obj\Debug\Music Control.exe.manifest
 F:\cloud\visual projects\Music Control\Music Control\obj\Debug\Music Control.application
+C:\visual studio projects\music control\Music Control\bin\Debug\Music Control.exe.config
+C:\visual studio projects\music control\Music Control\bin\Debug\Music Control.exe.manifest
+C:\visual studio projects\music control\Music Control\bin\Debug\Music Control.application
+C:\visual studio projects\music control\Music Control\bin\Debug\Music Control.exe
+C:\visual studio projects\music control\Music Control\bin\Debug\Music Control.pdb
+C:\visual studio projects\music control\Music Control\bin\Debug\Music Control.xml
+C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.vbprojAssemblyReference.cache
+C:\visual studio projects\music control\Music Control\obj\Debug\MusicControl.FRM_Control.resources
+C:\visual studio projects\music control\Music Control\obj\Debug\MusicControl.Frm_Settings.resources
+C:\visual studio projects\music control\Music Control\obj\Debug\MusicControl.Resources.resources
+C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.vbproj.GenerateResource.cache
+C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.vbproj.CoreCompileInputs.cache
+C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.exe.manifest
+C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.application
+C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.exe
+C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.xml
+C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.pdb
