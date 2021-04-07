@@ -48,7 +48,7 @@ Partial Class FRM_Control
         Me.Btn_Close.FlatAppearance.BorderSize = 0
         Me.Btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Close.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
-        Me.Btn_Close.ForeColor = System.Drawing.Color.White
+        Me.Btn_Close.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(136, Byte), Integer))
         Me.Btn_Close.Location = New System.Drawing.Point(307, 5)
         Me.Btn_Close.Name = "Btn_Close"
         Me.Btn_Close.Size = New System.Drawing.Size(25, 25)
@@ -62,7 +62,7 @@ Partial Class FRM_Control
         Me.Btn_minimize.FlatAppearance.BorderSize = 0
         Me.Btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_minimize.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
-        Me.Btn_minimize.ForeColor = System.Drawing.Color.White
+        Me.Btn_minimize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(136, Byte), Integer))
         Me.Btn_minimize.Location = New System.Drawing.Point(276, 5)
         Me.Btn_minimize.Name = "Btn_minimize"
         Me.Btn_minimize.Size = New System.Drawing.Size(25, 25)
@@ -73,7 +73,7 @@ Partial Class FRM_Control
         'lbl_Header
         '
         Me.lbl_Header.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
-        Me.lbl_Header.ForeColor = System.Drawing.Color.White
+        Me.lbl_Header.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(136, Byte), Integer))
         Me.lbl_Header.Location = New System.Drawing.Point(115, 97)
         Me.lbl_Header.Name = "lbl_Header"
         Me.lbl_Header.Size = New System.Drawing.Size(95, 25)

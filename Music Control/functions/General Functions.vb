@@ -175,7 +175,7 @@
         FRM_Control.Btn_minimize.Location = New Point((FRM_Control.Width - 30 - 30), 5)
         FRM_Control.lbl_Header.Location = New Point(5, 10)
 
-        FRM_Control.Btn_settings.Location = New Point((FRM_Control.Width - 30 - 30 - 30 + 5), 10)
+        FRM_Control.Btn_settings.Location = New Point((FRM_Control.Width - 30 - 30 - 30), 10)
 
     End Sub
 End Module

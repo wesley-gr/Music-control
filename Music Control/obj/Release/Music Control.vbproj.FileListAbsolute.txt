@@ -14,3 +14,4 @@ C:\visual studio projects\music control\Music Control\obj\Release\Music Control.
 C:\visual studio projects\music control\Music Control\obj\Release\Music Control.exe
 C:\visual studio projects\music control\Music Control\obj\Release\Music Control.xml
 C:\visual studio projects\music control\Music Control\obj\Release\Music Control.pdb
+C:\visual studio projects\music control\Music Control\obj\Release\Music Control.vbprojAssemblyReference.cache
