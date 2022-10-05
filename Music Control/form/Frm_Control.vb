@@ -42,6 +42,8 @@
 
         lbl_Header.Text = "Music control "
 
+
+
     End Sub
 
     Private Sub Frm_control_close(sender As Object, e As EventArgs) Handles MyBase.FormClosing

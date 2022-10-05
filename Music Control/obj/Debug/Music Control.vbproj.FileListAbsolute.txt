@@ -45,3 +45,23 @@ C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.ap
 C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.exe
 C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.xml
 C:\visual studio projects\music control\Music Control\obj\Debug\Music Control.pdb
+Z:\visual projects\Repo\Music control\Music Control\obj\Debug\Music Control.vbproj.AssemblyReference.cache
+Z:\visual projects\Repo\Music control\Music Control\obj\Debug\Music Control.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\bin\Debug\Music Control.exe.config
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\bin\Debug\Music Control.exe.manifest
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\bin\Debug\Music Control.application
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\bin\Debug\Music Control.exe
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\bin\Debug\Music Control.pdb
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\bin\Debug\Music Control.xml
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.vbproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\MusicControl.FRM_Control.resources
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\MusicControl.Frm_Settings.resources
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\MusicControl.Resources.resources
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.vbproj.GenerateResource.cache
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.vbproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.exe.manifest
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.application
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.exe
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.xml
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.pdb

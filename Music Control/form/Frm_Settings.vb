@@ -21,6 +21,10 @@
         CB_Position.Text = My.Settings.Frm_Control_Position
 
 
+        ComboBox_EndPointDevices.DataSource = AudioEndPoints.GetEndPointNames(AudioEndPoints.EDataFlow.eRender)
+
+
+
     End Sub
 
     Private Sub Button_ok_Click(sender As Object, e As EventArgs) Handles Btn_Ok.Click

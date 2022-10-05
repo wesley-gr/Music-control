@@ -27,5 +27,15 @@ Music Control
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="M:MusicControl.AudioEndPoints.SetDefaultEndPoint(System.String,System.Boolean,System.Boolean)">
+ <summary>Sets the specified device as the default device and/or the default communications device.</summary>
+ <param name="devId">The string Id for the input or output device to set.</param>
+ <param name="SetAsDefaultDevice">Set to True to set this device as the default device.</param>
+ <param name="SetAsDefaultCommunicationDevice">Set to True to set this device as the default communications device.</param>
+</member>
+<member name="M:MusicControl.AudioEndPoints.GetEndPointNames(MusicControl.AudioEndPoints.EDataFlow)">
+ <summary>Returns an array of EndPointDeviceInfo classes which contain the information for each device found for the specified types.</summary>
+ <param name="DevType">Can be (eRender) to get only output devices, (eCapture) to get only the input devices, or (eAll) to get all input and output devices.</param>
+</member>
 </members>
 </doc>
