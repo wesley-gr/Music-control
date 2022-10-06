@@ -161,8 +161,8 @@
         FRM_Control.Btn_settings.Location = New Point((FRM_Control.Width - 30 - 30 - 30), 10)
 
         'device
-        FRM_Control.lbl_Device.Location = New Point(5, (button_small + space_y))
-        FRM_Control.lbl_Device.Width = FRM_Control.Width - 10
+        FRM_Control.lbl_Device.Location = New Point(5, (button_small + (2 * space_y)))
+        FRM_Control.lbl_Device.Width = FRM_Control.Width - 5
 
         'play
         FRM_Control.btn_Play.Height = My.Settings.Frm_Control_Btn_Frm_Size

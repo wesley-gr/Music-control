@@ -1,4 +1,5 @@
 ﻿Imports CoreAudioApi
+Imports Microsoft.Win32
 
 Public Class FRM_Control
 
@@ -115,13 +116,29 @@ Public Class FRM_Control
         Dim DevEnum As New MMDeviceEnumerator()
         Dim AudioDevice As MMDevice
 
+        Dim rk1 As RegistryKey
+        Dim rk2 As RegistryKey
+        Dim Friendlyname
+        Dim Desc
+
+        Dim ID
+        Dim RegKeyLoc
 
         AudioDevice = DevEnum.GetDefaultAudioEndpoint(EDataFlow.eRender, ERole.eMultimedia)
 
+        ID = AudioDevice.ID
+        ID = ID.remove(0, 17)
+
+        RegKeyLoc = "SOFTWARE\Microsoft\Windows\CurrentVersion\MMDevices\Audio\Render\" & ID & "\Properties"
+
+        rk1 = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64)
+        rk2 = rk1.OpenSubKey(RegKeyLoc)
+        Desc = rk2.GetValue("{b3f8fa53-0004-438e-9003-51a46e139bfc},6").ToString
+        Friendlyname = rk2.GetValue("{a45c254e-df1c-4efd-8020-67d146a850e0},2").ToString
 
 
-        lbl_Device.Text = AudioDevice.FriendlyName
-        lbl_Device.Text = AudioDevice.de
+
+        lbl_Device.Text = Friendlyname & " (" & Desc & ")"
 
     End Sub
 
