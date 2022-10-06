@@ -53,6 +53,7 @@ C:\Users\Administrator\Documents\Music\Music-control\Music Control\bin\Debug\Mus
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\bin\Debug\Music Control.exe
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\bin\Debug\Music Control.pdb
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\bin\Debug\Music Control.xml
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\bin\Debug\CoreAudioApi.dll
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.vbproj.AssemblyReference.cache
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.vbproj.SuggestedBindingRedirects.cache
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\MusicControl.FRM_Control.resources
@@ -62,6 +63,7 @@ C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Mus
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.vbproj.CoreCompileInputs.cache
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.exe.manifest
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.application
+C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.vbproj.CopyComplete
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.exe
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.xml
 C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Music Control.pdb

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Frm_Settings
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Frm_Settings
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Btn_Ok = New System.Windows.Forms.Button()
@@ -32,7 +32,6 @@ Partial Class Frm_Settings
         Me.Btn_Close = New System.Windows.Forms.Button()
         Me.Tbx_AlwaysOnTop = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox_EndPointDevices = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -167,27 +166,12 @@ Partial Class Frm_Settings
         Me.Label2.TabIndex = 30
         Me.Label2.Text = "Settings"
         '
-        'ComboBox_EndPointDevices
-        '
-        Me.ComboBox_EndPointDevices.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.ComboBox_EndPointDevices.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox_EndPointDevices.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
-        Me.ComboBox_EndPointDevices.ForeColor = System.Drawing.Color.White
-        Me.ComboBox_EndPointDevices.FormattingEnabled = True
-        Me.ComboBox_EndPointDevices.Items.AddRange(New Object() {"TopLeft", "TopRight", "BottomLeft", "BottomRight", "Center"})
-        Me.ComboBox_EndPointDevices.Location = New System.Drawing.Point(23, 376)
-        Me.ComboBox_EndPointDevices.Margin = New System.Windows.Forms.Padding(4)
-        Me.ComboBox_EndPointDevices.Name = "ComboBox_EndPointDevices"
-        Me.ComboBox_EndPointDevices.Size = New System.Drawing.Size(1184, 32)
-        Me.ComboBox_EndPointDevices.TabIndex = 31
-        '
         'Frm_Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1270, 541)
-        Me.Controls.Add(Me.ComboBox_EndPointDevices)
+        Me.ClientSize = New System.Drawing.Size(393, 328)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Tbx_AlwaysOnTop)
         Me.Controls.Add(Me.Btn_Close)
@@ -216,5 +200,4 @@ Partial Class Frm_Settings
     Friend WithEvents Btn_Close As Button
     Friend WithEvents Tbx_AlwaysOnTop As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents ComboBox_EndPointDevices As ComboBox
 End Class

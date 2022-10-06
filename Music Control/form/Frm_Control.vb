@@ -1,4 +1,6 @@
-﻿Public Class FRM_Control
+﻿Imports CoreAudioApi
+
+Public Class FRM_Control
 
     ' declare varieble for keyboard media keys
     Private Declare Sub keybd_event Lib "user32" (ByVal bVk As Byte, ByVal bScan As Byte, ByVal dwFlags As Long, ByVal dwExtraInfo As Long)
@@ -40,9 +42,7 @@
         End Select
 #End Region
 
-        lbl_Header.Text = "Music control "
-
-
+        lbl_Header.Text = "Music"
 
     End Sub
 
@@ -108,6 +108,23 @@
                 MyBase.WndProc(m)
         End Select
     End Sub
+
+    Private Sub TimerDevice_Tick(sender As Object, e As EventArgs) Handles TimerDevice.Tick
+
+
+        Dim DevEnum As New MMDeviceEnumerator()
+        Dim AudioDevice As MMDevice
+
+
+        AudioDevice = DevEnum.GetDefaultAudioEndpoint(EDataFlow.eRender, ERole.eMultimedia)
+
+
+
+        lbl_Device.Text = AudioDevice.FriendlyName
+        lbl_Device.Text = AudioDevice.de
+
+    End Sub
+
 
 
 

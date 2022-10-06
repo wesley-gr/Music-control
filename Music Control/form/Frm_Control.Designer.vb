@@ -35,6 +35,8 @@ Partial Class FRM_Control
         Me.Btn_Previous = New System.Windows.Forms.Button()
         Me.btn_Play = New System.Windows.Forms.Button()
         Me.Btn_settings = New System.Windows.Forms.Button()
+        Me.lbl_Device = New System.Windows.Forms.Label()
+        Me.TimerDevice = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'Tmr_on_Top
@@ -49,9 +51,10 @@ Partial Class FRM_Control
         Me.Btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Close.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
         Me.Btn_Close.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(136, Byte), Integer))
-        Me.Btn_Close.Location = New System.Drawing.Point(307, 5)
+        Me.Btn_Close.Location = New System.Drawing.Point(409, 6)
+        Me.Btn_Close.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn_Close.Name = "Btn_Close"
-        Me.Btn_Close.Size = New System.Drawing.Size(25, 25)
+        Me.Btn_Close.Size = New System.Drawing.Size(33, 31)
         Me.Btn_Close.TabIndex = 29
         Me.Btn_Close.Text = "X"
         Me.Btn_Close.UseVisualStyleBackColor = False
@@ -63,9 +66,10 @@ Partial Class FRM_Control
         Me.Btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_minimize.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
         Me.Btn_minimize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(136, Byte), Integer))
-        Me.Btn_minimize.Location = New System.Drawing.Point(276, 5)
+        Me.Btn_minimize.Location = New System.Drawing.Point(368, 6)
+        Me.Btn_minimize.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn_minimize.Name = "Btn_minimize"
-        Me.Btn_minimize.Size = New System.Drawing.Size(25, 25)
+        Me.Btn_minimize.Size = New System.Drawing.Size(33, 31)
         Me.Btn_minimize.TabIndex = 30
         Me.Btn_minimize.Text = "-"
         Me.Btn_minimize.UseVisualStyleBackColor = False
@@ -74,11 +78,13 @@ Partial Class FRM_Control
         '
         Me.lbl_Header.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
         Me.lbl_Header.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(136, Byte), Integer))
-        Me.lbl_Header.Location = New System.Drawing.Point(115, 97)
+        Me.lbl_Header.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbl_Header.Location = New System.Drawing.Point(153, 119)
+        Me.lbl_Header.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_Header.Name = "lbl_Header"
-        Me.lbl_Header.Size = New System.Drawing.Size(95, 25)
+        Me.lbl_Header.Size = New System.Drawing.Size(75, 31)
         Me.lbl_Header.TabIndex = 31
-        Me.lbl_Header.Text = "Settings"
+        Me.lbl_Header.Text = "Music"
         '
         'Btn_Volume_Higher
         '
@@ -87,9 +93,10 @@ Partial Class FRM_Control
         Me.Btn_Volume_Higher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Btn_Volume_Higher.FlatAppearance.BorderSize = 0
         Me.Btn_Volume_Higher.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Volume_Higher.Location = New System.Drawing.Point(230, 5)
+        Me.Btn_Volume_Higher.Location = New System.Drawing.Point(307, 6)
+        Me.Btn_Volume_Higher.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn_Volume_Higher.Name = "Btn_Volume_Higher"
-        Me.Btn_Volume_Higher.Size = New System.Drawing.Size(40, 40)
+        Me.Btn_Volume_Higher.Size = New System.Drawing.Size(53, 49)
         Me.Btn_Volume_Higher.TabIndex = 5
         Me.Btn_Volume_Higher.UseVisualStyleBackColor = False
         '
@@ -100,9 +107,10 @@ Partial Class FRM_Control
         Me.Btn_Volume_Lower.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Btn_Volume_Lower.FlatAppearance.BorderSize = 0
         Me.Btn_Volume_Lower.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Volume_Lower.Location = New System.Drawing.Point(185, 5)
+        Me.Btn_Volume_Lower.Location = New System.Drawing.Point(247, 6)
+        Me.Btn_Volume_Lower.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn_Volume_Lower.Name = "Btn_Volume_Lower"
-        Me.Btn_Volume_Lower.Size = New System.Drawing.Size(40, 40)
+        Me.Btn_Volume_Lower.Size = New System.Drawing.Size(53, 49)
         Me.Btn_Volume_Lower.TabIndex = 4
         Me.Btn_Volume_Lower.UseVisualStyleBackColor = False
         '
@@ -113,9 +121,10 @@ Partial Class FRM_Control
         Me.Btn_Mute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Btn_Mute.FlatAppearance.BorderSize = 0
         Me.Btn_Mute.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Mute.Location = New System.Drawing.Point(140, 5)
+        Me.Btn_Mute.Location = New System.Drawing.Point(187, 6)
+        Me.Btn_Mute.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn_Mute.Name = "Btn_Mute"
-        Me.Btn_Mute.Size = New System.Drawing.Size(40, 40)
+        Me.Btn_Mute.Size = New System.Drawing.Size(53, 49)
         Me.Btn_Mute.TabIndex = 3
         Me.Btn_Mute.UseVisualStyleBackColor = False
         '
@@ -126,9 +135,10 @@ Partial Class FRM_Control
         Me.Btn_Next.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Btn_Next.FlatAppearance.BorderSize = 0
         Me.Btn_Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Next.Location = New System.Drawing.Point(95, 5)
+        Me.Btn_Next.Location = New System.Drawing.Point(127, 6)
+        Me.Btn_Next.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn_Next.Name = "Btn_Next"
-        Me.Btn_Next.Size = New System.Drawing.Size(40, 40)
+        Me.Btn_Next.Size = New System.Drawing.Size(53, 49)
         Me.Btn_Next.TabIndex = 2
         Me.Btn_Next.UseVisualStyleBackColor = False
         '
@@ -139,9 +149,10 @@ Partial Class FRM_Control
         Me.Btn_Previous.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Btn_Previous.FlatAppearance.BorderSize = 0
         Me.Btn_Previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Previous.Location = New System.Drawing.Point(50, 5)
+        Me.Btn_Previous.Location = New System.Drawing.Point(67, 6)
+        Me.Btn_Previous.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn_Previous.Name = "Btn_Previous"
-        Me.Btn_Previous.Size = New System.Drawing.Size(40, 40)
+        Me.Btn_Previous.Size = New System.Drawing.Size(53, 49)
         Me.Btn_Previous.TabIndex = 1
         Me.Btn_Previous.UseVisualStyleBackColor = False
         '
@@ -152,9 +163,10 @@ Partial Class FRM_Control
         Me.btn_Play.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btn_Play.FlatAppearance.BorderSize = 0
         Me.btn_Play.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_Play.Location = New System.Drawing.Point(5, 5)
+        Me.btn_Play.Location = New System.Drawing.Point(7, 6)
+        Me.btn_Play.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Play.Name = "btn_Play"
-        Me.btn_Play.Size = New System.Drawing.Size(40, 40)
+        Me.btn_Play.Size = New System.Drawing.Size(53, 49)
         Me.btn_Play.TabIndex = 0
         Me.btn_Play.UseVisualStyleBackColor = False
         '
@@ -165,18 +177,38 @@ Partial Class FRM_Control
         Me.Btn_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Btn_settings.FlatAppearance.BorderSize = 0
         Me.Btn_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_settings.Location = New System.Drawing.Point(296, 144)
+        Me.Btn_settings.Location = New System.Drawing.Point(395, 177)
+        Me.Btn_settings.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn_settings.Name = "Btn_settings"
-        Me.Btn_settings.Size = New System.Drawing.Size(20, 20)
+        Me.Btn_settings.Size = New System.Drawing.Size(27, 25)
         Me.Btn_settings.TabIndex = 32
         Me.Btn_settings.UseVisualStyleBackColor = False
         '
+        'lbl_Device
+        '
+        Me.lbl_Device.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
+        Me.lbl_Device.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(136, Byte), Integer))
+        Me.lbl_Device.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbl_Device.Location = New System.Drawing.Point(235, 266)
+        Me.lbl_Device.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_Device.Name = "lbl_Device"
+        Me.lbl_Device.Size = New System.Drawing.Size(207, 31)
+        Me.lbl_Device.TabIndex = 33
+        Me.lbl_Device.Text = "............."
+        Me.lbl_Device.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TimerDevice
+        '
+        Me.TimerDevice.Enabled = True
+        Me.TimerDevice.Interval = 1000
+        '
         'FRM_Control
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(633, 329)
+        Me.ClientSize = New System.Drawing.Size(844, 405)
+        Me.Controls.Add(Me.lbl_Device)
         Me.Controls.Add(Me.Btn_settings)
         Me.Controls.Add(Me.lbl_Header)
         Me.Controls.Add(Me.Btn_minimize)
@@ -189,6 +221,7 @@ Partial Class FRM_Control
         Me.Controls.Add(Me.btn_Play)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "FRM_Control"
         Me.Text = "Music Control"
@@ -206,4 +239,6 @@ Partial Class FRM_Control
     Friend WithEvents Btn_minimize As Button
     Friend WithEvents lbl_Header As Label
     Friend WithEvents Btn_settings As Button
+    Friend WithEvents lbl_Device As Label
+    Friend WithEvents TimerDevice As Timer
 End Class

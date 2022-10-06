@@ -140,42 +140,60 @@
     End Function
 
     Public Sub Resize_form_buttons_Control()
-        Dim space = 5
+        Dim space_x = 5
+        Dim space_y = 5
         Dim button_small = 25
 
-        FRM_Control.Height = My.Settings.Frm_Control_Btn_Frm_Size + button_small + (3 * space)
-        FRM_Control.Width = (My.Settings.Frm_Control_Btn_Frm_Size * 6) + space + (6 * space)
+        ''form
+        FRM_Control.Height = My.Settings.Frm_Control_Btn_Frm_Size + (2 * button_small) + (4 * space_y)
+        FRM_Control.Width = (My.Settings.Frm_Control_Btn_Frm_Size * 6) + space_x + (6 * space_x)
 
+        ''close
+        FRM_Control.Btn_Close.Location = New Point((FRM_Control.Width - 30), space_y)
+
+        'minimize
+        FRM_Control.Btn_minimize.Location = New Point((FRM_Control.Width - 30 - 30), space_y)
+
+        'header
+        FRM_Control.lbl_Header.Location = New Point(space_x, (2 * space_y))
+
+        'settings
+        FRM_Control.Btn_settings.Location = New Point((FRM_Control.Width - 30 - 30 - 30), 10)
+
+        'device
+        FRM_Control.lbl_Device.Location = New Point(5, (button_small + space_y))
+        FRM_Control.lbl_Device.Width = FRM_Control.Width - 10
+
+        'play
         FRM_Control.btn_Play.Height = My.Settings.Frm_Control_Btn_Frm_Size
         FRM_Control.btn_Play.Width = My.Settings.Frm_Control_Btn_Frm_Size
-        FRM_Control.btn_Play.Location = New Point(space, 35)
+        FRM_Control.btn_Play.Location = New Point(space_x, ((2 * button_small) + (2 * space_y)))
 
+        'previous
         FRM_Control.Btn_Previous.Height = My.Settings.Frm_Control_Btn_Frm_Size
         FRM_Control.Btn_Previous.Width = My.Settings.Frm_Control_Btn_Frm_Size
-        FRM_Control.Btn_Previous.Location = New Point((My.Settings.Frm_Control_Btn_Frm_Size + (2 * space)), 35)
+        FRM_Control.Btn_Previous.Location = New Point(((2 * space_x) + (1 * My.Settings.Frm_Control_Btn_Frm_Size)), ((2 * button_small) + (2 * space_y)))
 
+        'next
         FRM_Control.Btn_Next.Height = My.Settings.Frm_Control_Btn_Frm_Size
         FRM_Control.Btn_Next.Width = My.Settings.Frm_Control_Btn_Frm_Size
-        FRM_Control.Btn_Next.Location = New Point(((2 * My.Settings.Frm_Control_Btn_Frm_Size) + (3 * space)), 35)
+        FRM_Control.Btn_Next.Location = New Point(((3 * space_x) + (2 * My.Settings.Frm_Control_Btn_Frm_Size)), ((2 * button_small) + (2 * space_y)))
 
+        'mute
         FRM_Control.Btn_Mute.Height = My.Settings.Frm_Control_Btn_Frm_Size
         FRM_Control.Btn_Mute.Width = My.Settings.Frm_Control_Btn_Frm_Size
-        FRM_Control.Btn_Mute.Location = New Point(((3 * My.Settings.Frm_Control_Btn_Frm_Size) + (4 * space)), 35)
+        FRM_Control.Btn_Mute.Location = New Point(((4 * space_x) + (3 * My.Settings.Frm_Control_Btn_Frm_Size)), ((2 * button_small) + (2 * space_y)))
 
+        'volume lower
         FRM_Control.Btn_Volume_Lower.Height = My.Settings.Frm_Control_Btn_Frm_Size
         FRM_Control.Btn_Volume_Lower.Width = My.Settings.Frm_Control_Btn_Frm_Size
-        FRM_Control.Btn_Volume_Lower.Location = New Point(((4 * My.Settings.Frm_Control_Btn_Frm_Size) + (5 * space)), 35)
+        FRM_Control.Btn_Volume_Lower.Location = New Point(((5 * space_x) + (4 * My.Settings.Frm_Control_Btn_Frm_Size)), ((2 * button_small) + (2 * space_y)))
 
+        'volume higher
         FRM_Control.Btn_Volume_Higher.Height = My.Settings.Frm_Control_Btn_Frm_Size
         FRM_Control.Btn_Volume_Higher.Width = My.Settings.Frm_Control_Btn_Frm_Size
-        FRM_Control.Btn_Volume_Higher.Location = New Point(((5 * My.Settings.Frm_Control_Btn_Frm_Size) + (6 * space)), 35)
+        FRM_Control.Btn_Volume_Higher.Location = New Point(((6 * space_x) + (5 * My.Settings.Frm_Control_Btn_Frm_Size)), ((2 * button_small) + (2 * space_y)))
 
-        FRM_Control.Btn_Close.Location = New Point((FRM_Control.Width - 30), 5)
-
-        FRM_Control.Btn_minimize.Location = New Point((FRM_Control.Width - 30 - 30), 5)
-        FRM_Control.lbl_Header.Location = New Point(5, 10)
-
-        FRM_Control.Btn_settings.Location = New Point((FRM_Control.Width - 30 - 30 - 30), 10)
 
     End Sub
 End Module
