@@ -43,26 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CoreAudioApi.dll" size="26624">
-      <assemblyIdentity name="CoreAudioApi" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CoreAudio.dll" size="76800">
+      <assemblyIdentity name="CoreAudio" version="2021.9.1.37" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LCmWNFQaE7OhC6/97RPik79muorSB5T926oHvBFSmyA=</dsig:DigestValue>
+        <dsig:DigestValue>QVn4hBe81teWqG59THUKfQkUC8Ey0IRyR1dEMerSd2k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Music Control.exe" size="453120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Music Control.exe" size="451584">
       <assemblyIdentity name="Music Control" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dcdLKHAIIEdTvrImaUv2H0HwRjClhfMOpP8kpKvceJ8=</dsig:DigestValue>
+        <dsig:DigestValue>BXGJuEYclLxBCqZYiaPWtrCfdVFeMHbEtvCOkER52+A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

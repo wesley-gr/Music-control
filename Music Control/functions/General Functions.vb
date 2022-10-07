@@ -1,17 +1,8 @@
-﻿Module General_Functions
-    Public Function Get_UserName() As String
-        If TypeOf My.User.CurrentPrincipal Is
-          Security.Principal.WindowsPrincipal Then
-            ' The application is using Windows authentication.
-            ' The name format is DOMAIN\USERNAME.
-            Dim parts() As String = Split(My.User.Name, "\")
-            Dim username As String = parts(1)
-            Return username
-        Else
-            ' The application is using custom authentication.
-            Return My.User.Name
-        End If
-    End Function
+﻿
+
+Imports CoreAudio
+
+Module General_Functions
 
     Public Sub form_at_BottomRight(ByRef FormName)
         Dim working_area As Rectangle =
@@ -75,40 +66,6 @@
 
         FormName.StartPosition = FormStartPosition.Manual
         FormName.Location = New Point(x, y)
-    End Sub
-
-    Public Function Check_If_Running(ByRef Program)
-
-        Dim tmp
-
-        tmp = False
-
-        For Each clsProcess As Process In Process.GetProcesses()
-
-            If clsProcess.ProcessName.StartsWith(Program) Then
-                tmp = True
-            End If
-        Next
-
-        Return tmp
-
-    End Function
-
-    Public Sub activate_Program(ByRef Program, ByRef key)
-
-        Dim tmp
-
-        tmp = False
-
-        For Each clsProcess As Process In Process.GetProcesses()
-
-            If clsProcess.ProcessName.StartsWith(Program) Then
-                AppActivate(clsProcess.Id)
-
-                SendKeys.SendWait(key)
-            End If
-        Next
-
     End Sub
 
     Public Function Color_darker(ByRef color_input As Color)
@@ -196,4 +153,17 @@
 
 
     End Sub
+
+    Public Function GetActiveAudioDevice() As String
+        ''declare variable for audio device
+        Dim DevEnum As New MMDeviceEnumerator()
+        Dim AudioDevice As MMDevice
+
+        AudioDevice = DevEnum.GetDefaultAudioEndpoint(EDataFlow.eRender, ERole.eMultimedia)
+
+        Return AudioDevice.DeviceFriendlyName
+
+    End Function
+
+
 End Module

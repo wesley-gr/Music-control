@@ -1,15 +1,13 @@
-﻿Imports CoreAudioApi
-Imports Microsoft.Win32
+﻿Imports CoreAudio
 
 Public Class FRM_Control
 
     ' declare varieble for keyboard media keys
     Private Declare Sub keybd_event Lib "user32" (ByVal bVk As Byte, ByVal bScan As Byte, ByVal dwFlags As Long, ByVal dwExtraInfo As Long)
 
-    'declare version
-    Dim Version = "V2.0"
 
-    Private Sub frm_control_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub Frm_control_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 #Region "default settings"
         'default settings volume
@@ -44,6 +42,7 @@ Public Class FRM_Control
 #End Region
 
         lbl_Header.Text = "Music"
+        lbl_Device.Text = GetActiveAudioDevice()
 
     End Sub
 
@@ -51,7 +50,7 @@ Public Class FRM_Control
         My.Settings.Save()
     End Sub
 
-    Private Sub btn_Play_Click(sender As Object, e As EventArgs) Handles btn_Play.Click
+    Private Sub Btn_Play_Click(sender As Object, e As EventArgs) Handles btn_Play.Click
         keybd_event(Keys.MediaPlayPause, 0, 1, 0)
     End Sub
 
@@ -110,40 +109,15 @@ Public Class FRM_Control
         End Select
     End Sub
 
+#End Region
+
     Private Sub TimerDevice_Tick(sender As Object, e As EventArgs) Handles TimerDevice.Tick
 
-
-        Dim DevEnum As New MMDeviceEnumerator()
-        Dim AudioDevice As MMDevice
-
-        Dim rk1 As RegistryKey
-        Dim rk2 As RegistryKey
-        Dim Friendlyname
-        Dim Desc
-
-        Dim ID
-        Dim RegKeyLoc
-
-        AudioDevice = DevEnum.GetDefaultAudioEndpoint(EDataFlow.eRender, ERole.eMultimedia)
-
-        ID = AudioDevice.ID
-        ID = ID.remove(0, 17)
-
-        RegKeyLoc = "SOFTWARE\Microsoft\Windows\CurrentVersion\MMDevices\Audio\Render\" & ID & "\Properties"
-
-        rk1 = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64)
-        rk2 = rk1.OpenSubKey(RegKeyLoc)
-        Desc = rk2.GetValue("{b3f8fa53-0004-438e-9003-51a46e139bfc},6").ToString
-        Friendlyname = rk2.GetValue("{a45c254e-df1c-4efd-8020-67d146a850e0},2").ToString
-
-
-
-        lbl_Device.Text = Friendlyname & " (" & Desc & ")"
+        lbl_Device.Text = GetActiveAudioDevice()
 
     End Sub
 
 
 
 
-#End Region
 End Class

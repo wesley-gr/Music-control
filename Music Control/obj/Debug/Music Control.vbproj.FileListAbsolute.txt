@@ -83,7 +83,7 @@ C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\bin\De
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\bin\Debug\Music Control.exe
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\bin\Debug\Music Control.pdb
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\bin\Debug\Music Control.xml
-C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\bin\Debug\CoreAudioApi.dll
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\Music Control.exe.manifest
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\Music Control.application
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\Music Control.vbproj.CopyComplete
+C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\bin\Debug\CoreAudio.dll
