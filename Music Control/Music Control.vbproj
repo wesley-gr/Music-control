@@ -14,7 +14,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
-    <PublishUrl>C:\Users\Administrator\Documents\Music\Music-control\Installer\</PublishUrl>
+    <PublishUrl>C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\installer\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,9 +24,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>6</ApplicationRevision>
-    <ApplicationVersion>0.0.10.%2a</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -81,12 +80,16 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CoreAudio, Version=2021.9.1.37, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CoreAudio.1.16.0\lib\netstandard2.0\CoreAudio.dll</HintPath>
+    <Reference Include="CoreAudio, Version=2022.11.3.109, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CoreAudio.1.19.0\lib\netstandard2.0\CoreAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
@@ -122,13 +125,6 @@
       <DependentUpon>Frm_Control.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="functions\General Functions.vb" />
-    <Compile Include="form\Frm_Settings.Designer.vb">
-      <DependentUpon>Frm_Settings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="form\Frm_Settings.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\Application1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
@@ -153,9 +149,6 @@
   <ItemGroup>
     <EmbeddedResource Include="form\Frm_Control.resx">
       <DependentUpon>Frm_Control.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="form\Frm_Settings.resx">
-      <DependentUpon>Frm_Settings.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -195,9 +188,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Resources\play.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -53,54 +53,6 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property Frm_Control_Time_AlwaysOnTop() As Integer
-            Get
-                Return CType(Me("Frm_Control_Time_AlwaysOnTop"),Integer)
-            End Get
-            Set
-                Me("Frm_Control_Time_AlwaysOnTop") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property Frm_Control_Btn_Frm_Size() As Integer
-            Get
-                Return CType(Me("Frm_Control_Btn_Frm_Size"),Integer)
-            End Get
-            Set
-                Me("Frm_Control_Btn_Frm_Size") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("TopLeft")>  _
-        Public Property Frm_Control_Position() As String
-            Get
-                Return CType(Me("Frm_Control_Position"),String)
-            End Get
-            Set
-                Me("Frm_Control_Position") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
-        Public Property Frm_Windows_As_Background() As Boolean
-            Get
-                Return CType(Me("Frm_Windows_As_Background"),Boolean)
-            End Get
-            Set
-                Me("Frm_Windows_As_Background") = value
-            End Set
-        End Property
     End Class
 End Namespace
 

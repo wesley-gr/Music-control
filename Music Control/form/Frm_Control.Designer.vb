@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FRM_Control
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,38 +20,37 @@ Partial Class FRM_Control
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_Control))
         Me.Tmr_on_Top = New System.Windows.Forms.Timer(Me.components)
         Me.Btn_Close = New System.Windows.Forms.Button()
         Me.Btn_minimize = New System.Windows.Forms.Button()
-        Me.lbl_Header = New System.Windows.Forms.Label()
-        Me.Btn_Volume_Higher = New System.Windows.Forms.Button()
-        Me.Btn_Volume_Lower = New System.Windows.Forms.Button()
-        Me.Btn_Mute = New System.Windows.Forms.Button()
-        Me.Btn_Next = New System.Windows.Forms.Button()
-        Me.Btn_Previous = New System.Windows.Forms.Button()
-        Me.btn_Play = New System.Windows.Forms.Button()
-        Me.Btn_settings = New System.Windows.Forms.Button()
         Me.lbl_Device = New System.Windows.Forms.Label()
-        Me.TimerDevice = New System.Windows.Forms.Timer(Me.components)
+        Me.Header = New System.Windows.Forms.Panel()
+        Me.btn_Play = New MaterialSkin.Controls.MaterialButton()
+        Me.Btn_Previous = New MaterialSkin.Controls.MaterialButton()
+        Me.Btn_Next = New MaterialSkin.Controls.MaterialButton()
+        Me.Btn_Mute = New MaterialSkin.Controls.MaterialButton()
+        Me.Volume_Slider = New MaterialSkin.Controls.MaterialSlider()
+        Me.TmrSlider = New System.Windows.Forms.Timer(Me.components)
+        Me.Header.SuspendLayout()
         Me.SuspendLayout()
         '
         'Tmr_on_Top
         '
         Me.Tmr_on_Top.Enabled = True
-        Me.Tmr_on_Top.Interval = 5000
+        Me.Tmr_on_Top.Interval = 2000
         '
         'Btn_Close
         '
-        Me.Btn_Close.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.Btn_Close.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(159, Byte), Integer))
         Me.Btn_Close.FlatAppearance.BorderSize = 0
         Me.Btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Close.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
-        Me.Btn_Close.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(136, Byte), Integer))
-        Me.Btn_Close.Location = New System.Drawing.Point(307, 5)
+        Me.Btn_Close.ForeColor = System.Drawing.Color.Black
+        Me.Btn_Close.Location = New System.Drawing.Point(271, 0)
         Me.Btn_Close.Name = "Btn_Close"
         Me.Btn_Close.Size = New System.Drawing.Size(25, 25)
         Me.Btn_Close.TabIndex = 29
@@ -60,174 +59,168 @@ Partial Class FRM_Control
         '
         'Btn_minimize
         '
-        Me.Btn_minimize.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.Btn_minimize.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(159, Byte), Integer))
         Me.Btn_minimize.FlatAppearance.BorderSize = 0
         Me.Btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_minimize.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
-        Me.Btn_minimize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(136, Byte), Integer))
-        Me.Btn_minimize.Location = New System.Drawing.Point(276, 5)
+        Me.Btn_minimize.ForeColor = System.Drawing.Color.Black
+        Me.Btn_minimize.Location = New System.Drawing.Point(236, 0)
         Me.Btn_minimize.Name = "Btn_minimize"
         Me.Btn_minimize.Size = New System.Drawing.Size(25, 25)
         Me.Btn_minimize.TabIndex = 30
         Me.Btn_minimize.Text = "-"
         Me.Btn_minimize.UseVisualStyleBackColor = False
         '
-        'lbl_Header
-        '
-        Me.lbl_Header.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
-        Me.lbl_Header.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(136, Byte), Integer))
-        Me.lbl_Header.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbl_Header.Location = New System.Drawing.Point(115, 97)
-        Me.lbl_Header.Name = "lbl_Header"
-        Me.lbl_Header.Size = New System.Drawing.Size(56, 25)
-        Me.lbl_Header.TabIndex = 31
-        Me.lbl_Header.Text = "Music"
-        '
-        'Btn_Volume_Higher
-        '
-        Me.Btn_Volume_Higher.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_Volume_Higher.BackgroundImage = CType(resources.GetObject("Btn_Volume_Higher.BackgroundImage"), System.Drawing.Image)
-        Me.Btn_Volume_Higher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btn_Volume_Higher.FlatAppearance.BorderSize = 0
-        Me.Btn_Volume_Higher.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Volume_Higher.Location = New System.Drawing.Point(230, 5)
-        Me.Btn_Volume_Higher.Name = "Btn_Volume_Higher"
-        Me.Btn_Volume_Higher.Size = New System.Drawing.Size(40, 40)
-        Me.Btn_Volume_Higher.TabIndex = 5
-        Me.Btn_Volume_Higher.UseVisualStyleBackColor = False
-        '
-        'Btn_Volume_Lower
-        '
-        Me.Btn_Volume_Lower.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_Volume_Lower.BackgroundImage = CType(resources.GetObject("Btn_Volume_Lower.BackgroundImage"), System.Drawing.Image)
-        Me.Btn_Volume_Lower.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btn_Volume_Lower.FlatAppearance.BorderSize = 0
-        Me.Btn_Volume_Lower.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Volume_Lower.Location = New System.Drawing.Point(185, 5)
-        Me.Btn_Volume_Lower.Name = "Btn_Volume_Lower"
-        Me.Btn_Volume_Lower.Size = New System.Drawing.Size(40, 40)
-        Me.Btn_Volume_Lower.TabIndex = 4
-        Me.Btn_Volume_Lower.UseVisualStyleBackColor = False
-        '
-        'Btn_Mute
-        '
-        Me.Btn_Mute.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_Mute.BackgroundImage = CType(resources.GetObject("Btn_Mute.BackgroundImage"), System.Drawing.Image)
-        Me.Btn_Mute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btn_Mute.FlatAppearance.BorderSize = 0
-        Me.Btn_Mute.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Mute.Location = New System.Drawing.Point(140, 5)
-        Me.Btn_Mute.Name = "Btn_Mute"
-        Me.Btn_Mute.Size = New System.Drawing.Size(40, 40)
-        Me.Btn_Mute.TabIndex = 3
-        Me.Btn_Mute.UseVisualStyleBackColor = False
-        '
-        'Btn_Next
-        '
-        Me.Btn_Next.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_Next.BackgroundImage = CType(resources.GetObject("Btn_Next.BackgroundImage"), System.Drawing.Image)
-        Me.Btn_Next.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btn_Next.FlatAppearance.BorderSize = 0
-        Me.Btn_Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Next.Location = New System.Drawing.Point(95, 5)
-        Me.Btn_Next.Name = "Btn_Next"
-        Me.Btn_Next.Size = New System.Drawing.Size(40, 40)
-        Me.Btn_Next.TabIndex = 2
-        Me.Btn_Next.UseVisualStyleBackColor = False
-        '
-        'Btn_Previous
-        '
-        Me.Btn_Previous.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_Previous.BackgroundImage = CType(resources.GetObject("Btn_Previous.BackgroundImage"), System.Drawing.Image)
-        Me.Btn_Previous.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btn_Previous.FlatAppearance.BorderSize = 0
-        Me.Btn_Previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Previous.Location = New System.Drawing.Point(50, 5)
-        Me.Btn_Previous.Name = "Btn_Previous"
-        Me.Btn_Previous.Size = New System.Drawing.Size(40, 40)
-        Me.Btn_Previous.TabIndex = 1
-        Me.Btn_Previous.UseVisualStyleBackColor = False
-        '
-        'btn_Play
-        '
-        Me.btn_Play.BackColor = System.Drawing.Color.Transparent
-        Me.btn_Play.BackgroundImage = CType(resources.GetObject("btn_Play.BackgroundImage"), System.Drawing.Image)
-        Me.btn_Play.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_Play.FlatAppearance.BorderSize = 0
-        Me.btn_Play.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_Play.Location = New System.Drawing.Point(5, 5)
-        Me.btn_Play.Name = "btn_Play"
-        Me.btn_Play.Size = New System.Drawing.Size(40, 40)
-        Me.btn_Play.TabIndex = 0
-        Me.btn_Play.UseVisualStyleBackColor = False
-        '
-        'Btn_settings
-        '
-        Me.Btn_settings.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_settings.BackgroundImage = CType(resources.GetObject("Btn_settings.BackgroundImage"), System.Drawing.Image)
-        Me.Btn_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Btn_settings.FlatAppearance.BorderSize = 0
-        Me.Btn_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_settings.Location = New System.Drawing.Point(296, 144)
-        Me.Btn_settings.Name = "Btn_settings"
-        Me.Btn_settings.Size = New System.Drawing.Size(20, 20)
-        Me.Btn_settings.TabIndex = 32
-        Me.Btn_settings.UseVisualStyleBackColor = False
-        '
         'lbl_Device
         '
-        Me.lbl_Device.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
-        Me.lbl_Device.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(136, Byte), Integer))
+        Me.lbl_Device.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(181, Byte), Integer))
+        Me.lbl_Device.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lbl_Device.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.lbl_Device.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lbl_Device.Location = New System.Drawing.Point(176, 216)
+        Me.lbl_Device.Location = New System.Drawing.Point(0, 25)
         Me.lbl_Device.Name = "lbl_Device"
-        Me.lbl_Device.Size = New System.Drawing.Size(155, 25)
+        Me.lbl_Device.Size = New System.Drawing.Size(306, 25)
         Me.lbl_Device.TabIndex = 33
         Me.lbl_Device.Text = "............."
         Me.lbl_Device.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'TimerDevice
+        'Header
         '
-        Me.TimerDevice.Enabled = True
-        Me.TimerDevice.Interval = 1000
+        Me.Header.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.Header.Controls.Add(Me.Btn_Close)
+        Me.Header.Controls.Add(Me.Btn_minimize)
+        Me.Header.Location = New System.Drawing.Point(0, 0)
+        Me.Header.Name = "Header"
+        Me.Header.Size = New System.Drawing.Size(306, 25)
+        Me.Header.TabIndex = 34
+        '
+        'btn_Play
+        '
+        Me.btn_Play.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_Play.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_Play.Depth = 0
+        Me.btn_Play.DrawShadows = False
+        Me.btn_Play.HighEmphasis = True
+        Me.btn_Play.Icon = CType(resources.GetObject("btn_Play.Icon"), System.Drawing.Image)
+        Me.btn_Play.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.btn_Play.Location = New System.Drawing.Point(10, 55)
+        Me.btn_Play.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_Play.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_Play.Name = "btn_Play"
+        Me.btn_Play.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_Play.Size = New System.Drawing.Size(64, 36)
+        Me.btn_Play.TabIndex = 35
+        Me.btn_Play.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_Play.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_Play.UseAccentColor = False
+        Me.btn_Play.UseVisualStyleBackColor = True
+        '
+        'Btn_Previous
+        '
+        Me.Btn_Previous.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.Btn_Previous.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.Btn_Previous.Depth = 0
+        Me.Btn_Previous.HighEmphasis = True
+        Me.Btn_Previous.Icon = CType(resources.GetObject("Btn_Previous.Icon"), System.Drawing.Image)
+        Me.Btn_Previous.Location = New System.Drawing.Point(84, 55)
+        Me.Btn_Previous.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.Btn_Previous.MouseState = MaterialSkin.MouseState.HOVER
+        Me.Btn_Previous.Name = "Btn_Previous"
+        Me.Btn_Previous.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.Btn_Previous.Size = New System.Drawing.Size(64, 36)
+        Me.Btn_Previous.TabIndex = 36
+        Me.Btn_Previous.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Btn_Previous.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.Btn_Previous.UseAccentColor = False
+        Me.Btn_Previous.UseVisualStyleBackColor = True
+        '
+        'Btn_Next
+        '
+        Me.Btn_Next.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.Btn_Next.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.Btn_Next.Depth = 0
+        Me.Btn_Next.HighEmphasis = True
+        Me.Btn_Next.Icon = CType(resources.GetObject("Btn_Next.Icon"), System.Drawing.Image)
+        Me.Btn_Next.Location = New System.Drawing.Point(158, 55)
+        Me.Btn_Next.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.Btn_Next.MouseState = MaterialSkin.MouseState.HOVER
+        Me.Btn_Next.Name = "Btn_Next"
+        Me.Btn_Next.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.Btn_Next.Size = New System.Drawing.Size(64, 36)
+        Me.Btn_Next.TabIndex = 37
+        Me.Btn_Next.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Btn_Next.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.Btn_Next.UseAccentColor = False
+        Me.Btn_Next.UseVisualStyleBackColor = True
+        '
+        'Btn_Mute
+        '
+        Me.Btn_Mute.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.Btn_Mute.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.Btn_Mute.Depth = 0
+        Me.Btn_Mute.HighEmphasis = True
+        Me.Btn_Mute.Icon = CType(resources.GetObject("Btn_Mute.Icon"), System.Drawing.Image)
+        Me.Btn_Mute.Location = New System.Drawing.Point(232, 55)
+        Me.Btn_Mute.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.Btn_Mute.MouseState = MaterialSkin.MouseState.HOVER
+        Me.Btn_Mute.Name = "Btn_Mute"
+        Me.Btn_Mute.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.Btn_Mute.Size = New System.Drawing.Size(64, 36)
+        Me.Btn_Mute.TabIndex = 38
+        Me.Btn_Mute.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Btn_Mute.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.Btn_Mute.UseAccentColor = False
+        Me.Btn_Mute.UseVisualStyleBackColor = True
+        '
+        'Volume_Slider
+        '
+        Me.Volume_Slider.Depth = 0
+        Me.Volume_Slider.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Volume_Slider.Location = New System.Drawing.Point(12, 96)
+        Me.Volume_Slider.MouseState = MaterialSkin.MouseState.HOVER
+        Me.Volume_Slider.Name = "Volume_Slider"
+        Me.Volume_Slider.Size = New System.Drawing.Size(280, 40)
+        Me.Volume_Slider.TabIndex = 39
+        Me.Volume_Slider.Text = "Volume"
+        '
+        'TmrSlider
+        '
+        Me.TmrSlider.Enabled = True
+        Me.TmrSlider.Interval = 250
         '
         'FRM_Control
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(633, 329)
-        Me.Controls.Add(Me.lbl_Device)
-        Me.Controls.Add(Me.Btn_settings)
-        Me.Controls.Add(Me.lbl_Header)
-        Me.Controls.Add(Me.Btn_minimize)
-        Me.Controls.Add(Me.Btn_Close)
-        Me.Controls.Add(Me.Btn_Volume_Higher)
-        Me.Controls.Add(Me.Btn_Volume_Lower)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(306, 136)
+        Me.Controls.Add(Me.Volume_Slider)
         Me.Controls.Add(Me.Btn_Mute)
         Me.Controls.Add(Me.Btn_Next)
         Me.Controls.Add(Me.Btn_Previous)
         Me.Controls.Add(Me.btn_Play)
+        Me.Controls.Add(Me.Header)
+        Me.Controls.Add(Me.lbl_Device)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FRM_Control"
         Me.Text = "Music Control"
         Me.TransparencyKey = System.Drawing.Color.White
+        Me.Header.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btn_Play As System.Windows.Forms.Button
-    Friend WithEvents Btn_Previous As System.Windows.Forms.Button
-    Friend WithEvents Btn_Next As System.Windows.Forms.Button
-    Friend WithEvents Btn_Mute As System.Windows.Forms.Button
-    Friend WithEvents Btn_Volume_Lower As System.Windows.Forms.Button
-    Friend WithEvents Btn_Volume_Higher As System.Windows.Forms.Button
     Friend WithEvents Tmr_on_Top As System.Windows.Forms.Timer
     Friend WithEvents Btn_Close As Button
     Friend WithEvents Btn_minimize As Button
-    Friend WithEvents lbl_Header As Label
-    Friend WithEvents Btn_settings As Button
     Friend WithEvents lbl_Device As Label
-    Friend WithEvents TimerDevice As Timer
+    Friend WithEvents Header As Panel
+    Friend WithEvents btn_Play As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents Btn_Previous As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents Btn_Next As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents Btn_Mute As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents Volume_Slider As MaterialSkin.Controls.MaterialSlider
+    Friend WithEvents TmrSlider As Timer
 End Class

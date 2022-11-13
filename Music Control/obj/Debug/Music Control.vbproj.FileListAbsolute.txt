@@ -70,7 +70,6 @@ C:\Users\Administrator\Documents\Music\Music-control\Music Control\obj\Debug\Mus
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\Music Control.vbproj.AssemblyReference.cache
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\Music Control.vbproj.SuggestedBindingRedirects.cache
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\MusicControl.FRM_Control.resources
-C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\MusicControl.Frm_Settings.resources
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\MusicControl.Resources.resources
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\Music Control.vbproj.GenerateResource.cache
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\Music Control.vbproj.CoreCompileInputs.cache
@@ -87,3 +86,4 @@ C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\De
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\Music Control.application
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\Music Control.vbproj.CopyComplete
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\bin\Debug\CoreAudio.dll
+C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\bin\Debug\MaterialSkin.dll

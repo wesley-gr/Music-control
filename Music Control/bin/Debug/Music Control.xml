@@ -22,10 +22,5 @@ Music Control
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:MusicControl.My.Resources.Resources.play">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 </members>
 </doc>
