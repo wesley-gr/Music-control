@@ -6,8 +6,10 @@ Public Class FRM_Control
 #Region "public variables"
     ' declare varieble for keyboard media keys
     Private Declare Sub keybd_event Lib "user32" (ByVal bVk As Byte, ByVal bScan As Byte, ByVal dwFlags As Long, ByVal dwExtraInfo As Long)
-    Dim DevEnum As New MMDeviceEnumerator()
+
+    Dim DevEnum As New MMDeviceEnumerator(Guid.NewGuid())
     Dim AudioDevice As MMDevice
+
 #End Region
 
 #Region "Load"
@@ -62,8 +64,6 @@ Public Class FRM_Control
 #Region " audio device Functions"
     Public Sub GetActiveAudioDevice()
         ''declare variable for audio device
-        Dim DevEnum As New MMDeviceEnumerator()
-        Dim AudioDevice As MMDevice
 
         AudioDevice = DevEnum.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia)
 
@@ -72,21 +72,18 @@ Public Class FRM_Control
     End Sub
     Public Sub MutedAudioDevice()
 
-        AudioDevice = DevEnum.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia)
         Btn_Mute.UseAccentColor = AudioDevice.AudioEndpointVolume.Mute
 
     End Sub
 
     Public Sub GetVolumeAudioDevice()
 
-        AudioDevice = DevEnum.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia)
         Volume_Slider.Value = AudioDevice.AudioEndpointVolume.MasterVolumeLevelScalar * 100
 
     End Sub
 
     Public Sub SetVolumeAudioDevice()
 
-        AudioDevice = DevEnum.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia)
         If Volume_Slider.Value <> AudioDevice.AudioEndpointVolume.MasterVolumeLevelScalar * 100 Then
             AudioDevice.AudioEndpointVolume.MasterVolumeLevelScalar = Volume_Slider.Value / 100
         End If
