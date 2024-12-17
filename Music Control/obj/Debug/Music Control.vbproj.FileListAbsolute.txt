@@ -87,3 +87,22 @@ C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\De
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\obj\Debug\Music Control.vbproj.CopyComplete
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\bin\Debug\CoreAudio.dll
 C:\Users\www_t\OneDrive\Documents\vs projects\Music-control\Music Control\bin\Debug\MaterialSkin.dll
+C:\Users\Administrator\Documents\Music-control\Music Control\obj\Debug\Music Control.vbproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\Music-control\Music Control\obj\Debug\MusicControl.FRM_Control.resources
+C:\Users\Administrator\Documents\Music-control\Music Control\obj\Debug\MusicControl.Resources.resources
+C:\Users\Administrator\Documents\Music-control\Music Control\obj\Debug\Music Control.vbproj.GenerateResource.cache
+C:\Users\Administrator\Documents\Music-control\Music Control\obj\Debug\Music Control.vbproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Music-control\Music Control\obj\Debug\Music Control.exe
+C:\Users\Administrator\Documents\Music-control\Music Control\obj\Debug\Music Control.xml
+C:\Users\Administrator\Documents\Music-control\Music Control\obj\Debug\Music Control.pdb
+C:\Users\Administrator\Documents\Music-control\Music Control\bin\Debug\Music Control.exe.config
+C:\Users\Administrator\Documents\Music-control\Music Control\bin\Debug\Music Control.exe.manifest
+C:\Users\Administrator\Documents\Music-control\Music Control\bin\Debug\Music Control.application
+C:\Users\Administrator\Documents\Music-control\Music Control\bin\Debug\Music Control.exe
+C:\Users\Administrator\Documents\Music-control\Music Control\bin\Debug\Music Control.pdb
+C:\Users\Administrator\Documents\Music-control\Music Control\bin\Debug\Music Control.xml
+C:\Users\Administrator\Documents\Music-control\Music Control\bin\Debug\CoreAudio.dll
+C:\Users\Administrator\Documents\Music-control\Music Control\bin\Debug\MaterialSkin.dll
+C:\Users\Administrator\Documents\Music-control\Music Control\obj\Debug\Music Control.exe.manifest
+C:\Users\Administrator\Documents\Music-control\Music Control\obj\Debug\Music Control.application
+C:\Users\Administrator\Documents\Music-control\Music Control\obj\Debug\Music Co.150D010D.Up2Date

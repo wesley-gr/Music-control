@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CoreAudio.dll" size="79360">
-      <assemblyIdentity name="CoreAudio" version="2023.2.28.120" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CoreAudio.dll" size="83968">
+      <assemblyIdentity name="CoreAudio" version="2024.4.4.229" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>J66xepbtYTHSrNE8I2q6RSKd3bU0I2rrzckkh3MavHE=</dsig:DigestValue>
+        <dsig:DigestValue>GUWGQNBzCi9H0RF92/tY97zsK6voHAg2pP8njJjjNes=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,17 +73,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OUn7YIcLi7xsxTfBtsj5OImV0fg6g/IVufoAmZgjDHs=</dsig:DigestValue>
+        <dsig:DigestValue>LoBExyxHWsZLL8R57YD+m4ejefw9Tk5qdGSy541Asg8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Music Control.exe.config" size="1410">
+  <file name="Music Control.exe.config" size="1408">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>X089xgWK3C+ModFkBhoJzDYx0WcR8d8dZ/52rA1l70Q=</dsig:DigestValue>
+      <dsig:DigestValue>OyeiEtKtVHLMP3xMy0lJVfvQoweq/FjhHLA4JzZdEdU=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

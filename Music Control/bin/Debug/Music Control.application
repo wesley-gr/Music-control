@@ -4,17 +4,17 @@
   <description asmv2:publisher="Music Control" asmv2:product="Music Control" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.8.1" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Music Control.exe.manifest" size="4774">
+    <dependentAssembly dependencyType="install" codebase="Music Control.exe.manifest" size="4773">
       <assemblyIdentity name="Music Control.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>72IGi14vIFNADXe3mMoJl+C3obRcSeRvQvLjxv/dhhk=</dsig:DigestValue>
+        <dsig:DigestValue>bZk8AMPbuHF7lDwu9Ivct9WpRjDoDciHCKxfCEtce0Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

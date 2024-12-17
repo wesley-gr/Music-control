@@ -66,7 +66,6 @@ Public Class FRM_Control
         ''declare variable for audio device
 
         AudioDevice = DevEnum.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia)
-
         lbl_Device.Text = AudioDevice.DeviceFriendlyName
 
     End Sub
